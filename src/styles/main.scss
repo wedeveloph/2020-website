@@ -1,17 +1,108 @@
-body{
-    color:#fff;
+/* COLORS */
+
+$b: #131314;
+$black-dark: #262728;
+$gray: #5E6265;
+$gray-light: #B2B8BF;
+$w: #FCFCFF;
+
+$blue-dark: #001E8F;
+$blue-mid: #1931AB;
+
+$blue-accent: #95C5DB;
+$cyan-highlight: #B6E7E0;
+
+
+
+/* RESET */
+
+
+#container {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
 }
 
-#container{
-    margin:0;
+.box {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
-#landing{
-    
-    background: rgb(6,12,159);
-    background-size: cover;
-    background-repeat: no-repeat;
-background: linear-gradient(180deg, rgba(6,12,159,1) 0%, rgba(6,12,159,1) 76%, rgba(149,197,219,1) 99%);
+
+.box.center {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
+
+/* CODE */
+
+body {
+    color: #fff;
+}
+
+#container {
+    margin: 0;
+}
+
+
+
+/* RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
