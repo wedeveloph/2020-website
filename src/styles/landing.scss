@@ -20,7 +20,6 @@ $landing-bg: #ffffff;
 #landing{
     
     background: $blue-mid;
-    color: $w;
     
     min-height:700px;
     
@@ -30,10 +29,14 @@ $landing-bg: #ffffff;
     }
     
     h1{
-        
+        color: $w;
+        font-size:2.6em;
     }
     
+    h4{color: $w;}
+    
     p{
+    color: $w;
         margin-bottom:2em;
     }
  
@@ -53,5 +56,13 @@ $landing-bg: #ffffff;
     
 }
 
+#intro{
+    
+    .box-inner{
+        max-width:750px;
+    }
+    
+    
+}
 
 

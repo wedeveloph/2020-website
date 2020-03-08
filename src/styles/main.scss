@@ -121,6 +121,7 @@ body, *{
 -ms-transition: all .25s linear;
 -o-transition: all .25s linear;
 transition: all .25s linear;
+    color: $gray;
 }
 
 
@@ -131,6 +132,13 @@ h1{
     font-family: 'GTHaptikBlack';
     font-weight:800;
     max-width:80%;
+}
+
+h2{
+    display:block;
+    font-size:1.8em;
+    color: $gray;
+    font-family: 'GTHaptikMedium';
 }
 
 h4{
@@ -157,6 +165,39 @@ a:hover{
     color: $blue-accent;
     border-bottom: 1px solid $blue-dark;
 }
+
+img{
+    max-width:100%;
+}
+
+
+
+/* AREA: COMMUNITY */
+
+
+.community-container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .community-place{
+        padding:1em;
+        max-width:120px;
+        text-align: center;
+        font-size:.8em;
+        color: $gray;
+    }
+    
+    .community-place img{
+        max-width:110px;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+    
+    
+}
+
 
 
 
