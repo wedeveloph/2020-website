@@ -363,13 +363,14 @@ body.area-projects {
         flex-wrap: wrap;
         justify-content: center;
     }
-
+    
     .community-place {
         padding: 1em;
         max-width: 120px;
         text-align: center;
         font-size: .8em;
         line-height: 1.3em;
+        mix-blend-mode: lighten;
         color: $gray-light;
     }
 
