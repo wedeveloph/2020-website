@@ -27,10 +27,10 @@ module.exports = {
     // Specify the base path for all the assets within your
     // application. This is relative to the output path, so in
     // our case it will be ./public/assets
-    publicPath: '/assets',
+    publicPath: '/assets/',
     // The name of the output bundle. Path is also relative
     // to the output path
-    filename: 'assets/scripts/[name].js'
+    filename: 'scripts/[name].js'
   },
   module: {
     // Array of rules that tells Webpack how the modules (output)

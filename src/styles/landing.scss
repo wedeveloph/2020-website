@@ -18,15 +18,22 @@ $landing-bg: #ffffff;
 
 
 #landing{
-    
     color: $black-dark;
-    background: $landing-bg;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Messina Sans';
     
-
-
+    min-height:700px;
+    
+    .box-inner{
+        max-width:600px;
+        
+        p{
+            margin:1em 0;
+        }
+        
+    }
+    
 }
 
 
