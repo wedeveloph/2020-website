@@ -52,18 +52,8 @@ table {
 
 /* COLORS */
 
-$b: #131314;
-$black-dark: #262728;
-$black-mid: #323334;
-$gray: #5E6265;
-$gray-light: #B2B8BF;
-$w: #FCFCFF;
 
-$blue-dark: #001E8F;
-$blue-mid: #1931AB;
-
-$blue-accent: #95C5DB;
-$cyan-highlight: #B6E7E0;
+@import 'colors';
 
 
 
@@ -186,13 +176,30 @@ img{
         max-width:120px;
         text-align: center;
         font-size:.8em;
-        color: $gray;
+        color: $gray-light;
     }
     
     .community-place img{
         max-width:110px;
         padding: 1em;
         box-sizing: border-box;
+    }
+    
+    a.button{
+        display: inline-block;
+        background: $blue-mid;
+        color: $w;
+        
+        font-size:.8em;
+        margin:1em;
+        padding:.5em .75em;
+        border-radius:.5em;
+    }
+    
+    a.button:hover{
+        background: $blue-mid;
+        transform: translateY(-2px);
+        box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
     }
     
     

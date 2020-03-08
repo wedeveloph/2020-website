@@ -1,19 +1,6 @@
 /* COLORS */
 
-$b: #131314;
-$black-dark: #262728;
-$black-mid: #323334;
-$gray: #5E6265;
-$gray-light: #B2B8BF;
-$w: #FCFCFF;
-
-$blue-dark: #001E8F;
-$blue-mid: #1931AB;
-
-$blue-accent: #95C5DB;
-$cyan-highlight: #B6E7E0;
-
-
+@import 'colors';
 $landing-bg: #ffffff;
 
 
@@ -41,6 +28,7 @@ $landing-bg: #ffffff;
     }
  
     .landing-button{
+        display:inline-block;
         background: $blue-dark;
         color: $w;
         
@@ -49,6 +37,7 @@ $landing-bg: #ffffff;
     }
     
     .landing-button:hover{
+        background: $blue-mid;
         transform: translateY(-2px);
         box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 
