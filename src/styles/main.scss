@@ -167,6 +167,20 @@ img{
     max-width:100%;
 }
 
+details summary::-webkit-details-marker {
+    color:transparent;
+}
+
+details summary::after {
+    content: "Learn more...";
+    color: $gray-lighter;
+}
+
+details:hover summary::after{
+    color: $gray-light;
+}
+
+
 
 
 /* HEADER */
@@ -345,6 +359,8 @@ body.area-projects{
         padding: 1em;
         box-sizing: border-box;
     }
+    
+    
     
     a.button{
         display: inline-block;
