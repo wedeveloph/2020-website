@@ -3,6 +3,8 @@
 
 #intro{
     
+    padding:2em 3em;
+    
     background-repeat: no-repeat;
     background-size:cover;
     
@@ -51,4 +53,14 @@
         }
         
     
+}
+
+    
+.box-inner{
+    max-width:750px;
+    p{
+        color: $gray-light;
+        line-height:1.8em;
+        margin-bottom:1.5em;
+    }
 }

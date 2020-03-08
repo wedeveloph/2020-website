@@ -220,6 +220,18 @@ details:hover summary::after {
         }
         
     }
+    
+    
+    @media only screen and (max-width: 800px) {
+        .header-left{
+            display: none;
+        }
+        
+        .header-right{
+            width:100%;
+            text-align: center;
+        }
+    }
 
 }
 
@@ -499,6 +511,16 @@ body.area-projects {
             margin-bottom:1em;
             border-radius:5px;
             filter:grayscale(1);
+        }
+        
+        a{
+            padding:.5em;
+            display: inline-block;
+        }
+        
+        a:hover{
+            transform:translateY(-2px);
+        text-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
         }
         
         
