@@ -24,8 +24,9 @@ $landing-bg: #ffffff;
         max-width:500px;
         
         #typed{
+            display: inline-block;
             color: $w;  
-            height:100px;
+            height:150px;
             overflow:hidden;
             mix-blend-mode: screen;
         }
