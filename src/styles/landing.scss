@@ -12,15 +12,27 @@ $landing-bg: #ffffff;
 
     .headline {
         position: absolute;
-        padding-bottom:2em;
+        padding-bottom:4em;
         text-align: center;
     font-family: 'Messina Sans Mono';
         text-transform: uppercase;
         font-size:2.4em;
         line-height:1.3em;
         width:60vw;
-        max-width:450px;
-        color: $w;
+        max-width:500px;
+        
+        #typed{
+            
+            color: $w;  
+        }
+        
+        .word{
+            color: $gray;
+            font-size:.4em;
+            display: block;
+            margin-bottom:-1em;
+        }
+        
     }
 
     .box-inner {
@@ -39,16 +51,15 @@ $landing-bg: #ffffff;
 
     .landing-button {
         display: inline-block;
-        background: $blue-dark;
-        color: $w;
-
-        padding: .5em .75em;
+        color: $gray-light;
+        padding: 1em 0 0 0;
         border-radius: .5em;
     }
 
     .landing-button:hover {
-        background: $blue-mid;
-        transform: translateY(-2px);
+        color: $gray-lighter;
+        text-shadow:0 0 10px $gray;
+        transform: translateX(4px);
         box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 
     }
