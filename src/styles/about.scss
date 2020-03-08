@@ -23,6 +23,21 @@
         margin-bottom:1.5em;
     }
     
+    
+    @media only screen and (max-width: 800px) {
+     padding:1.5em;
+        
+        h2{
+            font-size:2.3em;
+        }
+        
+        p{
+            font-size:1.3em;
+        }
+        
+    }
+
+    
 }
 
 .impact{
@@ -53,6 +68,13 @@
         }
         
     
+    @media only screen and (max-width: 800px) {
+        .impact-box{
+            width:190px;
+        }   
+        
+        justify-content: center;
+    }
 }
 
     
