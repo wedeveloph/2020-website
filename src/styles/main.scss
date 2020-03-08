@@ -1,61 +1,3 @@
-/* COLORS */
-
-$b: #131314;
-$black-dark: #262728;
-$gray: #5E6265;
-$gray-light: #B2B8BF;
-$w: #FCFCFF;
-
-$blue-dark: #001E8F;
-$blue-mid: #1931AB;
-
-$blue-accent: #95C5DB;
-$cyan-highlight: #B6E7E0;
-
-
-
-/* RESET */
-
-
-#container {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    display: flex;
-    justify-content: center;
-
-    height: 100%;
-    width: 100%;
-}
-
-.box {
-    width: 100%;
-    box-sizing: border-box;
-}
-
-
-
-.box.center {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* CODE */
-
-body {
-    color: #fff;
-}
-
-#container {
-    margin: 0;
-}
-
-
 
 /* RESET */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -106,3 +48,120 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+/* COLORS */
+
+$b: #131314;
+$black-dark: #262728;
+$black-mid: #323334;
+$gray: #5E6265;
+$gray-light: #B2B8BF;
+$w: #FCFCFF;
+
+$blue-dark: #001E8F;
+$blue-mid: #1931AB;
+
+$blue-accent: #95C5DB;
+$cyan-highlight: #B6E7E0;
+
+
+
+/* BASE */
+
+body{
+    font-family: 'Messina Sans';
+    color: $black-mid;
+}
+
+
+#container {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.box.center {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* CODE */
+
+p{
+    font-size:1.4em 14px;
+}
+
+
+a{
+    color: $blue-dark;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover{
+    color: $blue-accent;
+    border-bottom: 1px solid $blue-dark;
+}
+
+
+
+/* FONTS */
+
+@font-face {
+    font-family: 'Messina Sans Mono';
+    src: url('../fonts/MessinaSansMono-Regular.woff2') format('woff2'),
+        url('../fonts/MessinaSansMono-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Messina Sans';
+    src: url('../fonts/MessinaSans-Regular.woff2') format('woff2'),
+        url('../fonts/MessinaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Messina Sans';
+    src: url('../fonts/MessinaSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/MessinaSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Messina Sans';
+    src: url('../fonts/MessinaSans-RegularItalic.woff2') format('woff2'),
+        url('../fonts/MessinaSans-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Messina Sans';
+    src: url('../fonts/MessinaSans-Bold.woff2') format('woff2'),
+        url('../fonts/MessinaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Messina Sans Mono';
+    src: url('MessinaSansMono-Regular.woff2') format('woff2'),
+        url('MessinaSansMono-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Messina Sans';
+    src: url('MessinaSans-Regular.woff2') format('woff2'),
+        url('MessinaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Messina Sans';
+    src: url('MessinaSans-BoldItalic.woff2') format('woff2'),
+        url('MessinaSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Messina Sans';
+    src: url('MessinaSans-RegularItalic.woff2') format('woff2'),
+        url('MessinaSans-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Messina Sans';
+    src: url('MessinaSans-Bold.woff2') format('woff2'),
+        url('MessinaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

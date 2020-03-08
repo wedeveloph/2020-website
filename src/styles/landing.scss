@@ -1,9 +1,33 @@
+/* COLORS */
+
+$b: #131314;
+$black-dark: #262728;
+$black-mid: #323334;
+$gray: #5E6265;
+$gray-light: #B2B8BF;
+$w: #FCFCFF;
+
+$blue-dark: #001E8F;
+$blue-mid: #1931AB;
+
+$blue-accent: #95C5DB;
+$cyan-highlight: #B6E7E0;
+
+
+$landing-bg: #ffffff;
+
 
 #landing{
     
-    background: rgb(6,12,159);
+    color: $black-dark;
+    background: $landing-bg;
     background-size: cover;
     background-repeat: no-repeat;
-background: linear-gradient(180deg, rgba(6,12,159,1) 0%, rgba(6,12,159,1) 76%, rgba(149,197,219,1) 99%);
+    font-family: 'Messina Sans';
+    
+
+
 }
+
+
 

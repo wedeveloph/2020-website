@@ -1,1 +1,5 @@
 node_modules/*
+*.otf
+*.woff
+*.woff2
+*.DS_Store
