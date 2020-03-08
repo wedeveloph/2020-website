@@ -9,7 +9,9 @@ $landing-bg: #ffffff;
     position: relative;
     background: #1d1a1a;
     min-height: 700px;
-
+    background-size: cover;
+    background-position: center;
+    
     .headline {
         position: absolute;
         padding-bottom:4em;
@@ -22,12 +24,15 @@ $landing-bg: #ffffff;
         max-width:500px;
         
         #typed{
-            
             color: $w;  
+            height:100px;
+            overflow:hidden;
+            mix-blend-mode: screen;
         }
         
         .word{
-            color: $gray;
+            mix-blend-mode: overlay;
+            color: $w;
             font-size:.4em;
             display: block;
             margin-bottom:-1em;
@@ -42,7 +47,7 @@ $landing-bg: #ffffff;
     }
 
     h4 {
-        color: $w;
+        color: $gray-lighter;
     }
 
     p {
@@ -52,6 +57,7 @@ $landing-bg: #ffffff;
     .landing-button {
         display: inline-block;
         color: $gray-light;
+        mix-blend-mode: screen;
         padding: 1em 0 0 0;
         border-radius: .5em;
     }
