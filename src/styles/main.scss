@@ -127,8 +127,17 @@ transition: all .25s linear;
 h1{
     display: block;
     text-align: left;
-    font-size:1.9em;
-    font-weight:bold;
+    font-size:2.1em;
+    font-family: 'GTHaptikBlack';
+    font-weight:800;
+    max-width:80%;
+}
+
+h4{
+    margin:.3em 0;
+    font-size:.8em;
+    text-transform: uppercase;
+    font-family: 'Messina Sans Mono';
 }
 
 p{
@@ -152,6 +161,32 @@ a:hover{
 
 
 /* FONTS */
+@font-face {
+    font-family: 'GTHaptikBlack';
+    src: url('../fonts/GTHaptikBlack.woff2') format('woff2'),
+        url('../fonts/GTHaptikBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GTHaptikMedium';
+    src: url('../fonts/GTHaptikMedium.woff2') format('woff2'),
+        url('../fonts/GTHaptikMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GTHaptikBold';
+    src: url('../fonts/GTHaptikBold.woff2') format('woff2'),
+        url('../fonts/GTHaptikBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
 
 @font-face {
     font-family: 'Messina Sans Mono';

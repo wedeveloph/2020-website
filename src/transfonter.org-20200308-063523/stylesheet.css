@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'GTHaptikBlack';
+    src: url('GTHaptikBlack.woff2') format('woff2'),
+        url('GTHaptikBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GTHaptikMedium';
+    src: url('GTHaptikMedium.woff2') format('woff2'),
+        url('GTHaptikMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GTHaptikBold';
+    src: url('GTHaptikBold.woff2') format('woff2'),
+        url('GTHaptikBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
