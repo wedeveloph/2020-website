@@ -18,20 +18,36 @@ $landing-bg: #ffffff;
 
 
 #landing{
-    color: $black-dark;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Messina Sans';
+    
+    background: $blue-mid;
+    color: $w;
     
     min-height:700px;
     
     .box-inner{
         max-width:600px;
+    }
+    
+    h1{
         
-        p{
-            margin:1em 0;
-        }
+    }
+    
+    p{
+        margin-bottom:2em;
+    }
+ 
+    .landing-button{
+        background: $blue-dark;
+        color: $w;
         
+        padding:.5em .75em;
+        border-radius:.5em;
+    }
+    
+    .landing-button:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+
     }
     
 }

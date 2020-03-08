@@ -97,6 +97,7 @@ body{
     overflow-y: scroll;
 }
 
+
 .box {
     width: 100%;
     box-sizing: border-box;
@@ -114,6 +115,14 @@ body{
 
 /* CODE */
 
+body, *{
+    -webkit-transition: all .25s linear;
+-moz-transition: all .25s linear;
+-ms-transition: all .25s linear;
+-o-transition: all .25s linear;
+transition: all .25s linear;
+}
+
 
 h1{
     display: block;
@@ -125,6 +134,7 @@ h1{
 p{
     font-size:18px;
     line-height:1.4em;
+    margin:.75em 0;
 }
 
 
