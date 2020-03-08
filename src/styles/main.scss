@@ -202,9 +202,12 @@ img{
 
 .community-container{
     
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    .community-communities{
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     
     .community-place{
         padding:1em;
