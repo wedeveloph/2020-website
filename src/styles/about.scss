@@ -1,0 +1,54 @@
+
+@import 'colors';
+
+#intro{
+    
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    .box-inner{
+        max-width:750px;
+    }
+    
+    h2{
+        color: $w;
+        text-align: center;
+    }
+    
+    p{
+        color: #ede5e5;
+        line-height:1.8em;
+        margin-bottom:1.5em;
+    }
+    
+}
+
+.impact{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .impact-box{
+        display: inline-block;
+        width:220px;
+        text-align: center;
+    font-family: 'Messina Sans';
+        margin:1em 0;
+    }
+    
+    strong{
+        font-size:2em;
+        color: $blue-accent;
+    }
+    
+        em{
+    font-family: 'Messina Sans Mono';
+            display: block;
+            text-transform: uppercase;
+            font-style: normal;
+            color: $w;
+        }
+        
+    
+}

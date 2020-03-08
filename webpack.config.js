@@ -16,7 +16,8 @@ module.exports = {
   entry: {
       'main': './src/scripts/main.js',
       'main': './src/styles/main.scss',
-      'landing': './src/styles/landing.scss'
+      'landing': './src/styles/landing.scss',
+      'about': './src/styles/about.scss'
   },
     
     // ['./src/scripts/main.js', './src/styles/main.scss', './src/styles/portfolio.scss'],
