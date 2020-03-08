@@ -200,11 +200,12 @@ details:hover summary::after{
     .header-left{
         width:200px;
         margin:.5em;
-        mix-blend-mode: screen;
+        opacity:0.9;
     }
     
     .header-left:hover{
-        transform: scale(1.05);
+        transform: scale(1.02);
+        opacity:1;
     }
     
 }
