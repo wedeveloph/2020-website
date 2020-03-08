@@ -33,7 +33,7 @@ body {
     align-items: flex-start;
 
     height: 100%;
-    width: 100%;
+    width: 100vw;
 
     justify-items: center;
 
@@ -50,7 +50,7 @@ body {
     justify-content: center;
     vertical-align: center;
     align-items: center;
-
+    margin:0;
 }
 
 
@@ -74,6 +74,7 @@ h1 {
     font-size: 2.1em;
     font-family: 'GTHaptikBlack';
     font-weight: 800;
+    margin:0;
     max-width: 80%;
 }
 
@@ -82,6 +83,10 @@ h2 {
     font-size: 1.8em;
     color: $gray;
     font-family: 'GTHaptikMedium';
+}
+
+h3{
+    margin:0;
 }
 
 h4 {
@@ -125,7 +130,7 @@ img {
 }
 
 details summary::-webkit-details-marker {
-    color: transparent;
+    display: none;
 }
 
 details summary::after {
@@ -137,7 +142,23 @@ details:hover summary::after {
     color: $gray-light;
 }
 
-
+.row{
+    display: flex;
+    
+    section{
+        min-width:40%;
+    }
+    
+    
+    @media only screen and (max-width: 800px) {
+        flex-wrap:wrap;
+        
+        section{
+            width:100%;
+        }   
+    }
+    
+}
 
 
 /* HEADER */
@@ -153,17 +174,51 @@ details:hover summary::after {
     background-image: url(../navigatin.png);
     background-repeat: repeat-x;
     background-size: contain;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    .header-container{
+        width:100%;
+        max-width:1000px;
+        margin: .5em;
+    }
 
     // Logo
     .header-left {
+        display:inline-block;
+        float:left;
         width: 200px;
-        margin: .5em;
         opacity: 0.9;
     }
 
     .header-left:hover {
         transform: scale(1.02);
         opacity: 1;
+    }
+    
+    .header-right{
+        display:inline-block;
+        float: right;
+        margin-top:.75em;
+        
+        // Header styling
+        a{
+            color: $w;
+            font-family: 'GTHaptikBold';
+            font-size:1.3em;
+            margin:.5em .5em;
+            padding:.5em;
+            opacity:0.9;
+            
+        }
+        
+        a:hover{
+            color: $blue-accent;
+            opacity:1;
+        }
+        
     }
 
 }
@@ -200,6 +255,8 @@ details:hover summary::after {
     
     p{
         font-size:1.2em;
+        font-weight: 100;
+        color: $gray-light;
     }
 
     
@@ -307,15 +364,78 @@ body.area-projects {
 
 
 
+
+
+/* EMAIL SIGNUP */
+
+#signup{
+    
+    height:300px;
+    
+    .box-inner{
+    margin-top:-2em;;
+    }
+    
+    *{
+        display:inline-block;
+    }
+    
+    h2{
+        display: block;
+        text-align: center;
+    }
+    
+    .mc-field-group{
+            font-size:1em;
+        
+        input[type=email]{
+            background:none;
+            display:inline-block;
+            border:1px solid $gray-light;
+            border-radius:5px;
+            font-size:1em;
+            padding:.5em 1em;
+            font-family: 'Messina Sans';
+            height:23px;
+            min-width:250px;
+        }
+        
+        
+    }
+        input[type=submit]{
+            display: inline-block;
+            background: $b;
+            color: $w;
+            padding:.5em 1em;
+            font-size:1.2em;
+            border-radius:5px;
+            border:0;
+            margin:.3em 0;
+            height:40px;
+        }
+        
+    input[type=submit]:hover{
+        
+        transform: translateY(-2px);
+        box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    }
+    
+    
+}
+
+
+/* AREA: GET INVOLVED */
+
+
+
+
 /* AREA: PEOPLE */
 
 .team-container {
 
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 780px;
     text-align: center;
 
     .team-box {
@@ -329,7 +449,8 @@ body.area-projects {
         }
         
         h3{
-            font-size:.6em;
+            font-size:.7em;
+            font-weight:100;
             margin: 0;
             text-transform: uppercase;
             color: $gray-lighter;
@@ -337,8 +458,9 @@ body.area-projects {
         }
         
         p{
-            font-size:.8em;
+            font-size:.9em;
             color: $gray-light;
+            text-align: left;
         }
         
         img{
@@ -380,7 +502,6 @@ body.area-projects {
         padding: 1em;
         box-sizing: border-box;
     }
-
 
 
     a.button {
