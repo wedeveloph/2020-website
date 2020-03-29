@@ -87,7 +87,7 @@ h2 {
 }
 
 h3{
-    margin:0;
+    margin:2em 0;
     font-weight:100;
 }
 
@@ -96,6 +96,11 @@ h4 {
     font-size: .8em;
     text-transform: uppercase;
     font-family: 'Messina Sans Mono';
+}
+
+hr{
+    padding:2em 0;
+    border:0;
 }
 
 p {
