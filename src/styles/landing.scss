@@ -118,20 +118,21 @@ $landing-bg: #ffffff;
 
     a.button {
         display: inline-block;
-        background: $gray-lighter;
         color: $gray;
-
+        background: $blue-accent;
+        height:30px;
+        line-height: 30px;
         margin: 1em;
         padding: .5em .75em;
-        border-radius: .5em;
+        border-radius: 18px;
     }
 
     a.button:hover {
-        background: $blue-accent;
+        background: $gray-lighter;
         transform: translateY(-2px);
         box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
     }
-
+    
     
     
 }
