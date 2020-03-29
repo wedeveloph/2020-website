@@ -127,6 +127,17 @@ blockquote{
     max-width:80%;
 }
 
+.iframe-container{
+    height:auto;
+    min-height:1000px;
+    
+    iframe{
+        position: absolute;
+        height;100%;
+    }
+    
+}
+
 
 .box-inner {
     padding: 5vw;
