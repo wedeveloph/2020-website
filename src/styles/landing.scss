@@ -96,6 +96,7 @@ $landing-bg: #ffffff;
 #announcement{
     background: #1d31b4;
     text-align: center;
+    padding:4em 0;
     
     img{
         mix-blend-mode: lighten;
@@ -114,7 +115,10 @@ $landing-bg: #ffffff;
         color: $gray-lighter;   
     }
     
-    
+    hr{
+        border:0;
+        padding:2em;
+    }
 
     a.button {
         display: inline-block;

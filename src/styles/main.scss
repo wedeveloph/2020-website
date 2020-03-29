@@ -88,6 +88,7 @@ h2 {
 
 h3{
     margin:0;
+    font-weight:100;
 }
 
 h4 {
@@ -111,6 +112,16 @@ p {
     }
 
 }
+
+
+blockquote{
+    padding:1em;
+    line-height:1.8em;
+    background: $gray-lighter;
+    color: $black-dark;
+    max-width:80%;
+}
+
 
 .box-inner {
     padding: 5vw;
@@ -377,12 +388,6 @@ body.area-projects {
 
 }
 
-
-#announcement{
-    
-    
-    
-}
 
 
 /* EMAIL SIGNUP */
