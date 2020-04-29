@@ -356,11 +356,21 @@ details:hover summary::after {
     z-index: 999;
 }
 
+#navigation .navigation-close{
+    position: fixed;
+    font-size:2em;
+    right:0;
+    padding:.5em 1em;
+
+    i{
+    color: $cyan-highlight;
+    }
+}
+
 #navigation .navigation-inner{
     margin: auto;
     width:90vw;
     max-width:600px;
-    height:500px;
     text-align: center;
     
     a{

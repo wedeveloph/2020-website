@@ -42,16 +42,20 @@
 
     <svg id="fader"></svg>
     
-    
     <div id="header">
         <div class="header-container">
             <div class="header-left">
                 <a href="index.html"><img src="images/developh-logo.png" alt="Developh"></a>
             </div>
             <div class="header-right">
+
+                <span class="hide">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="projects.html">Projects</a>
+                </span>
+                
+                <a id="more"><i class="fa fa-bars"></i></a>
             </div>
 
 
@@ -60,6 +64,10 @@
 
     
     <div id="navigation">
+        
+        <div class="navigation-close">
+        <i class="fa fa-close"></i>
+        </div>
     
         <div class="navigation-inner">
         <a href="index.html">Home</a>
@@ -290,9 +298,22 @@
 
 
 
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
         <script>
+            
+        $("#more").click(function() {
+          $( "#navigation" )
+              .fadeIn("slow")
+              .css("display", "flex");
+        });
+            
+        $("#navigation").click(function() {
+            $("#navigation").fadeOut("slow");
+        });
+        
             var typed = new Typed('#typed', {
                 strings: ['diversifying innovation in the majority world', 'creating for social impact', 'reshaping the tech pipeline', 'bridging the technology gap'],
                 typeSpeed: 40,
@@ -348,8 +369,6 @@
             
         </script>
 
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquer y/1.7.2/jquery.min.js" type="text/javascript"></script>
 </body>
 
 </html>

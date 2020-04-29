@@ -45,23 +45,47 @@
   </head>
   <body class="area-projects">>
       
-      <div id="header">
       
+      
+    <svg id="fader"></svg>
+    
+    <div id="header">
         <div class="header-container">
-          <div class="header-left">
-            <a href="index.html"><img src="images/developh-logo.png" alt="Developh"></a>
-          </div>
-          <div class="header-right">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-          </div>
-        
-            
+            <div class="header-left">
+                <a href="index.html"><img src="images/developh-logo.png" alt="Developh"></a>
+            </div>
+            <div class="header-right">
+
+                <span class="hide">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                </span>
+                
+                <a id="more"><i class="fa fa-bars"></i></a>
+            </div>
+
+
         </div>
-      
-      </div>
-      
+    </div>
+
+    
+    <div id="navigation">
+        
+        <div class="navigation-close">
+        <i class="fa fa-close"></i>
+        </div>
+    
+        <div class="navigation-inner">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="https://facebook.com/groups/developh" target="_blank">Join</a>
+        <a href="https://github.com/wedeveloph/jobs" target="_blank">Jobs</a>
+        </div>
+    
+    </div>
+
       
       <div id="container">
       
@@ -254,22 +278,67 @@
       
       
       
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
       
       
-      <script>
-  var typed = new Typed('#typed', {
-    strings: ['is diversifying innovation in the majority world', 'is creating for social impact', 'is reshaping the tech pipeline'],
-      typeSpeed: 40,
-        backDelay: 3400,
-      shuffle: true ,
-      loop: true,
-      smartBackspace: true,
-      showCursor: false,
-      autoInsertCss: false
-  });
-</script>
+        <script>
+            
+        $("#more").click(function() {
+          $( "#navigation" )
+              .fadeIn("slow")
+              .css("display", "flex");
+        });
+            
+        $("#navigation").click(function() {
+            $("#navigation").fadeOut("slow");
+        });
+            
+            
+            
+      function fadeInPage() {
+        if (!window.AnimationEvent) { return; }
+        var fader = document.getElementById('fader');
+        fader.classList.add('fade-out');
+      }
+            
+            fadeInPage()
+
+      document.addEventListener('DOMContentLoaded', function() {
+        if (!window.AnimationEvent) { return }
+
+        var anchors = document.getElementsByTagName('a');
+
+        for (var idx=0; idx<anchors.length; idx+=1) {
+          if (anchors[idx].hostname !== window.location.hostname) {
+            continue;
+          }
+
+          anchors[idx].addEventListener('click', function(event) {
+            var fader = document.getElementById('fader'),
+                anchor = event.currentTarget;
+
+            var listener = function() {
+              window.location = anchor.href;
+              fader.removeEventListener('animationend', listener);
+            };
+            fader.addEventListener('animationend', listener);
+
+            event.preventDefault();
+            fader.classList.add('fade-in');
+          });
+        }
+      });
+
+      window.addEventListener('pageshow', function (event) {
+        if (!event.persisted) {
+          return;
+        }
+        var fader = document.getElementById('fader');
+        fader.classList.remove('fade-in');
+      });
+            
+        </script>
       
   
   <script src="//ajax.googleapis.com/ajax/libs/jquer y/1.7.2/jquery.min.js" type="text/javascript"></script>
