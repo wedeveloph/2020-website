@@ -38,8 +38,11 @@
     </script>
 </head>
 
-<body>
+<body data-barba="wrapper">
 
+    <svg id="fader"></svg>
+    
+    
     <div id="header">
         <div class="header-container">
             <div class="header-left">
@@ -55,10 +58,23 @@
         </div>
     </div>
 
+    
+    <div id="navigation">
+    
+        <div class="navigation-inner">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="https://facebook.com/groups/developh" target="_blank">Join</a>
+        <a href="https://github.com/wedeveloph/jobs" target="_blank">Jobs</a>
+        </div>
+    
+    </div>
 
     
     <div id="container">
 
+        <div data-barba="container" data-barba-namespace="home">
         <div id="landing" class="box center" style="background-image:url(images/landing-core.jpg);">
 
             <div class="headline">
@@ -240,6 +256,7 @@
 
                 </div>
             </div>
+            </div>
 
             <div id="footer" class="box center">
 
@@ -275,8 +292,6 @@
 
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-
-
         <script>
             var typed = new Typed('#typed', {
                 strings: ['diversifying innovation in the majority world', 'creating for social impact', 'reshaping the tech pipeline', 'bridging the technology gap'],
@@ -289,6 +304,48 @@
                 autoInsertCss: false
             });
 
+             fadeInPage()
+            
+      function fadeInPage() {
+        if (!window.AnimationEvent) { return; }
+        var fader = document.getElementById('fader');
+        fader.classList.add('fade-out');
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        if (!window.AnimationEvent) { return }
+
+        var anchors = document.getElementsByTagName('a');
+
+        for (var idx=0; idx<anchors.length; idx+=1) {
+          if (anchors[idx].hostname !== window.location.hostname) {
+            continue;
+          }
+
+          anchors[idx].addEventListener('click', function(event) {
+            var fader = document.getElementById('fader'),
+                anchor = event.currentTarget;
+
+            var listener = function() {
+              window.location = anchor.href;
+              fader.removeEventListener('animationend', listener);
+            };
+            fader.addEventListener('animationend', listener);
+
+            event.preventDefault();
+            fader.classList.add('fade-in');
+          });
+        }
+      });
+
+      window.addEventListener('pageshow', function (event) {
+        if (!event.persisted) {
+          return;
+        }
+        var fader = document.getElementById('fader');
+        fader.classList.remove('fade-in');
+      });
+            
         </script>
 
 

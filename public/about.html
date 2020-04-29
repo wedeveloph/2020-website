@@ -48,7 +48,9 @@
       
 
   </head>
-  <body class="area-projects">>
+  <body data-barba="wrapper" class="area-projects">
+      
+    <svg id="fader"></svg>
       
       <div id="header">
       
@@ -71,7 +73,7 @@
       <div id="container">
       
         
-          
+          <div data-barba="container" data-barba-namespace="about">
           
           <div id="intro" class="box center" style="background-image:url(assets/images/about.jpg)">
               <div class="box-inner">
@@ -207,6 +209,7 @@ We've formed a large coalition and a support system that works, always build wit
                 </div>
             </div>
           
+          </div>
           
           <div id="footer" class="box center">
           
@@ -240,7 +243,54 @@ We've formed a large coalition and a support system that works, always build wit
       
       
       
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+      
+      
+        <script>
+            
+      function fadeInPage() {
+        if (!window.AnimationEvent) { return; }
+        var fader = document.getElementById('fader');
+        fader.classList.add('fade-out');
+      }
+            
+            fadeInPage()
+
+      document.addEventListener('DOMContentLoaded', function() {
+        if (!window.AnimationEvent) { return }
+
+        var anchors = document.getElementsByTagName('a');
+
+        for (var idx=0; idx<anchors.length; idx+=1) {
+          if (anchors[idx].hostname !== window.location.hostname) {
+            continue;
+          }
+
+          anchors[idx].addEventListener('click', function(event) {
+            var fader = document.getElementById('fader'),
+                anchor = event.currentTarget;
+
+            var listener = function() {
+              window.location = anchor.href;
+              fader.removeEventListener('animationend', listener);
+            };
+            fader.addEventListener('animationend', listener);
+
+            event.preventDefault();
+            fader.classList.add('fade-in');
+          });
+        }
+      });
+
+      window.addEventListener('pageshow', function (event) {
+        if (!event.persisted) {
+          return;
+        }
+        var fader = document.getElementById('fader');
+        fader.classList.remove('fade-in');
+      });
+            
+        </script>
       
   </body>
 </html>

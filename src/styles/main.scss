@@ -342,6 +342,41 @@ details:hover summary::after {
 }
 
 
+/* NAVIGATION */
+
+#navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background: #1931AB;
+    display: none;
+    justify-content: center;
+    z-index: 999;
+}
+
+#navigation .navigation-inner{
+    margin: auto;
+    width:90vw;
+    max-width:600px;
+    height:500px;
+    text-align: center;
+    
+    a{
+        display: block;
+        padding:1em;
+        font-size:2em;
+        border-bottom:1px solid $blue-dark;
+        color: $cyan-highlight;
+    }
+    
+    a:hover{
+        border-bottom:1px solid $blue-page;
+        color: #000;
+    }
+}
+
 
 /* AREA: PROJECTS */
 
@@ -616,6 +651,45 @@ body.area-projects {
 }
 
 
+/* PAGE TRANSITIONS */
+
+
+      #fader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999999;
+        pointer-events: none;
+        background: $blue-page;
+        animation-duration: 500ms;
+        animation-timing-function: ease-in-out;
+      }
+
+      #fader:before {
+        content: 'fade'
+      }
+
+      @keyframes fade-out {
+        from { opacity: 1 }
+        to { opacity: 0 }
+      }
+
+      @keyframes fade-in {
+        from { opacity: 0 }
+        to { opacity: 1 }
+      }
+
+      #fader.fade-out {
+        opacity: 0;
+        animation-name: fade-out;
+      }
+
+      #fader.fade-in {
+        opacity: 1;
+        animation-name: fade-in;
+      }
 
 
 /* FONTS */
