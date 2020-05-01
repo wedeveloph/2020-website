@@ -659,9 +659,7 @@ body.area-projects {
         overflow: hidden;
     }
     
-    img:hover{
-        transform: scale(1.02);
-    }
+   
     
     h3{
         margin:.5em;
@@ -671,7 +669,13 @@ body.area-projects {
     
 }
 
+.event:hover > img{
+        transform: scale(1.02);
+    }
 
+.event:hover > h3{
+    text-decoration: underline;
+}
 
 
 /* PAGE TRANSITIONS */
