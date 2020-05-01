@@ -211,7 +211,6 @@ details:hover summary::after {
     .header-container{
         width:100%;
         max-width:1000px;
-        margin: .5em;
     }
 
     // Logo
@@ -393,12 +392,35 @@ details:hover summary::after {
         font-size:2em;
         border-bottom:1px solid $blue-dark;
         color: $cyan-highlight;
+        font-family:"Messina Sans Mono";
+        text-transform: uppercase;
     }
     
     a:hover{
         border-bottom:1px solid $blue-page;
-        color: #000;
+        color: $w;
+        text-shadow:0 0 35px $w;
     }
+    
+    
+    .social{
+        margin-top:1em;
+    }
+    
+    .social a{
+        display: inline-block;
+        border:0;
+        font-size:1em;
+    }
+    
+    .social i{
+        color: cornflowerblue;
+    }
+    
+    .social i:hover{
+        color: $w;
+    }
+    
 }
 
 
