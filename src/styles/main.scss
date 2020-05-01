@@ -261,6 +261,16 @@ details:hover summary::after {
     
     
     @media only screen and (max-width: 800px) {
+        
+        .hide{
+            display: none;
+        }
+        
+        i:after{
+            content: "Explore";font-family:"Messina Sans Mono";
+            padding-left:1em;
+        }
+        
         .header-left{
             display: none;
         }
@@ -377,6 +387,10 @@ details:hover summary::after {
     i{
     color: $cyan-highlight;
     }
+    
+    i:hover{
+        color: black;
+    }
 }
 
 #navigation .navigation-inner{
@@ -419,6 +433,14 @@ details:hover summary::after {
     
     .social i:hover{
         color: $w;
+    }
+    
+    @media only screen and (max-width: 800px) {
+    
+        a{
+            font-size:1.5em;
+        }
+        
     }
     
 }
