@@ -196,7 +196,7 @@ details:hover summary::after {
     top: 0;
     left: 0;
     width: 100%;
-    height: 110px;
+    height: 140px;
     z-index: 99;
     box-sizing: border-box;
     background-image: url(../navigatin.png);
@@ -206,6 +206,7 @@ details:hover summary::after {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 1em;
     
     .header-container{
         width:100%;
@@ -234,17 +235,27 @@ details:hover summary::after {
         // Header styling
         a{
             color: $w;
-            font-family: 'GTHaptikBold';
+            font-family:"Messina Sans Mono";
             font-size:1.3em;
             margin:.5em .5em;
             padding:.5em;
             opacity:0.9;
+            
+            text-transform: uppercase;
             
         }
         
         a:hover{
             color: $blue-accent;
             opacity:1;
+        }
+        
+        i{
+            color: $w;
+        }
+        
+        i:hover{
+            color: $blue-accent;
         }
         
     }
@@ -362,7 +373,7 @@ details:hover summary::after {
     position: fixed;
     font-size:2em;
     right:0;
-    padding:.5em 1em;
+    padding:1em 1.5em;
 
     i{
     color: $cyan-highlight;
@@ -374,6 +385,7 @@ details:hover summary::after {
     width:90vw;
     max-width:600px;
     text-align: center;
+
     
     a{
         display: block;
@@ -704,7 +716,10 @@ body.area-projects {
       }
 
 
+
+
 /* FONTS */
+
 @font-face {
     font-family: 'GTHaptikBlack';
     src: url('../fonts/GTHaptikBlack.woff2') format('woff2'),
