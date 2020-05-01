@@ -657,10 +657,37 @@ body.area-projects {
 /* EVENTS */
 
 
+#events{
+    
+    .box-inner{
+        max-width:900px;
+    }
+    
+    h1{
+        text-align: center;
+        max-width: 100%;
+        padding:0 .5em;
+    }
+    
+    p{
+        text-align: center;
+    }
+    
+    .event-container{
+        
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
 .event{
     
-    max-width:80%;
+    max-width:380px;
     margin: auto;
+    padding:1em;
     overflow: hidden;
     
     .details{
@@ -676,7 +703,7 @@ body.area-projects {
     
     
     img{
-        max-height:260px;
+        max-height:220px;
         width: auto;
         overflow: hidden;
     }
@@ -693,6 +720,7 @@ body.area-projects {
 
 .event:hover > img{
         transform: scale(1.02);
+        overflow: hidden;
     }
 
 .event:hover > h3{
