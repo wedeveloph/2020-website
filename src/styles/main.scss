@@ -511,10 +511,13 @@ body.area-projects {
 
 #signup{
     
-    min-height:100px;
+    min-height:250px;
     
     .box-inner{
-    margin-top:-2em;;
+        margin-top:-2em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     *{
@@ -524,6 +527,17 @@ body.area-projects {
     h2{
         display: block;
         text-align: center;
+        margin:.5em;
+    }
+    
+    p{
+        margin:0;
+        text-align: center;
+    }
+    
+    #mc_embed_signup{
+        padding:1em;
+        margin: 0 auto;
     }
     
     .mc-field-group{
@@ -538,7 +552,9 @@ body.area-projects {
             padding:.5em 1em;
             font-family: 'Messina Sans';
             height:23px;
-            min-width:250px;
+            min-width:290px;
+
+
         }
         
         
@@ -548,11 +564,13 @@ body.area-projects {
             background: $b;
             color: $w;
             padding:.5em 1em;
-            font-size:1.2em;
+            font-size:1.1em;
             border-radius:5px;
             border:0;
-            margin:.3em 0;
-            height:40px;
+            margin:0;
+            margin-top:.4em;
+            height:41px;
+
         }
         
     input[type=submit]:hover{
