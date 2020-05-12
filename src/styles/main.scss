@@ -74,7 +74,7 @@ h1 {
     display: block;
     text-align: left;
     font-size: 2.1em;
-    font-family: 'GTHaptikBlack';
+    font-family: 'Founders Grotesk';
     font-weight: 800;
     margin:0;
     max-width: 80%;
@@ -795,26 +795,50 @@ body.area-projects {
 /* FONTS */
 
 @font-face {
-    font-family: 'GTHaptikBlack';
-    src: url('../fonts/GTHaptikBlack.woff2') format('woff2'),
-        url('../fonts/GTHaptikBlack.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
+    font-family: 'Founders Grotesk';
+    src: url('../fonts/FoundersGrotesk-SemiboldItalic.woff2') format('woff2'),
+        url('../fonts/FoundersGrotesk-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'GTHaptikMedium';
-    src: url('../fonts/GTHaptikMedium.woff2') format('woff2'),
-        url('../fonts/GTHaptikMedium.woff') format('woff');
+    font-family: 'Founders Grotesk';
+    src: url('../fonts/FoundersGrotesk-RegularItalic.woff2') format('woff2'),
+        url('../fonts/FoundersGrotesk-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url('../fonts/FoundersGrotesk-Medium.woff2') format('woff2'),
+        url('../fonts/FoundersGrotesk-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'GTHaptikBold';
-    src: url('../fonts/GTHaptikBold.woff2') format('woff2'),
-        url('../fonts/GTHaptikBold.woff') format('woff');
-    font-weight: bold;
+    font-family: 'Founders Grotesk';
+    src: url('../fonts/FoundersGrotesk-MediumItalic.woff2') format('woff2'),
+        url('../fonts/FoundersGrotesk-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url('../fonts/FoundersGrotesk-Semibold.woff2') format('woff2'),
+        url('../fonts/FoundersGrotesk-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url('../fonts/FoundersGrotesk-Regular.woff2') format('woff2'),
+        url('../fonts/FoundersGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
