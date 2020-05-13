@@ -159,8 +159,8 @@
 
  #community-intro a {
      margin: 0 1em;
-     background: #fff;
-     color: #000;
+     background:none;
+     color:#fff;
      border: 1px solid #fff;
      border-radius: 20px;
      font-family: "Founders Grotesk";
@@ -169,8 +169,8 @@
  }
 
  #community-intro a:hover {
-     background:none;
-     color:#fff;
+     background: #fff;
+     color: #000;
  }
 
 
