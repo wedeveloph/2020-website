@@ -434,10 +434,12 @@ details:hover summary::after {
     a {
         display: block;
         padding: 1em;
-        font-size: 1.4em;
+        font-size: 1.3em;
         border-bottom: 1px solid $blue-dark;
         color: $cyan-highlight;
-        font-family: "Founders Grotesk";
+        font-family: "Messina Sans Mono";
+        text-transform: uppercase;
+        
     }
 
     a:hover {
@@ -468,7 +470,7 @@ details:hover summary::after {
     @media only screen and (max-width: 800px) {
 
         a {
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
 
     }
