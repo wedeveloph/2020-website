@@ -19,7 +19,6 @@ $lightgray: lightgray;
         display: flex;
         flex-wrap: wrap;
 
-
         .event-box {
 
             width: 100%;
@@ -63,6 +62,7 @@ $lightgray: lightgray;
             a.launch:hover {
                 background: $lightgray;
                 color: $darkgray;
+                cursor: ne-resize;
             }
 
             .details {
@@ -147,6 +147,9 @@ $lightgray: lightgray;
     flex-wrap: wrap;
     justify-content: center;
 
+    .event-box:hover{
+        cursor: ne-resize;
+    }
 
     .event-box {
 
@@ -180,20 +183,6 @@ $lightgray: lightgray;
             padding:.5em 0;
         }
 
-
-        a.launch {
-            margin: 1em;
-            border: 1px solid $lightgray;
-            border-radius: 20px;
-            font-family: "Founders Grotesk";
-            padding: .3em 1.4em .4em 1.4em;
-            color: $lightgray;
-        }
-
-        a.launch:hover {
-            background: $lightgray;
-            color: $darkgray;
-        }
 
         h3 {
             margin: 0;
