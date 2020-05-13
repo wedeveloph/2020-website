@@ -138,7 +138,53 @@ $landing-bg: #ffffff;
         color: $gray-lighter;
     }
     
+
+    .community-why{
+        
+        padding:2em 0 1em 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .why{
+            display: inline-block;
+            width:180px;
+            padding: .5em;
+            margin:.5em 1em;
+            
+            img{
+                width:80px;
+                padding: .5em;
+            }
+            
+            
+            h2{
+                text-align: center;
+                font-family:"Founders Grotesk";
+                font-weight: 400;
+                color:#fff;
+                margin:0;
+                padding:0;
+                max-width:100%;
+            }
+            
+            p{
+                font-size:.8em;
+                line-height: 1.2em;
+            }
+            
+            
+        }
+        
+        
+    }
+    
+    
 }
+
+
+
+
 
 #announcement{
     background: #1d31b4;
@@ -196,6 +242,7 @@ h2.big{
 .box-inner {
     max-width: 750px;
 }
+
 
 #intro {
 
