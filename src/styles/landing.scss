@@ -94,7 +94,9 @@ $landing-bg: #ffffff;
 
 
 #group{
+    
     min-height:450px;
+    background: #1c35a5;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -179,6 +181,12 @@ $landing-bg: #ffffff;
         
     }
     
+    @media only screen and (max-width: 800px) {
+    
+        background-position: center top;
+        background-size:contain;
+    
+    }
     
 }
 
