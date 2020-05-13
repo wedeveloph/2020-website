@@ -704,7 +704,7 @@ body.area-projects {
 
 .event{
     
-    max-width:380px;
+    max-width:340px;
     margin: auto;
     padding:1em;
     overflow: hidden;
@@ -712,6 +712,7 @@ body.area-projects {
     .details{
         text-align: center;
         padding:0 2em;
+        font-size:.8em;
         
         .detail{
             display: inline-block;
@@ -722,7 +723,7 @@ body.area-projects {
     
     
     img{
-        max-height:220px;
+        max-height:180px;
         width: auto;
         overflow: hidden;
     }
@@ -732,7 +733,7 @@ body.area-projects {
     h3{
         margin:.5em;
         text-align: center;
-        font-size:1.4em;
+        font-size:1.1em;
     }
     
 }
