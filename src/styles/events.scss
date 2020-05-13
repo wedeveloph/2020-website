@@ -3,6 +3,9 @@ $midgray: #a8a8a8;
 $lightgray: lightgray;
 
 
+#intro{
+    padding:0 0 2em 0;
+}
 
 #events {
 
@@ -175,7 +178,7 @@ $lightgray: lightgray;
 
         img {
             max-width: 200px;
-            max-height:100px;
+            max-height:95px;
             margin: 0 auto;
             width: auto;
             overflow: hidden;
@@ -208,7 +211,7 @@ $lightgray: lightgray;
                 margin: 0;
                 max-width: 100% !important;
                 width: 100%;
-                font-size: 1.2em;
+                font-size: 1em;
                 line-height: 1em;
                 text-align: center;
                 font-weight: 500;
