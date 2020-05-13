@@ -15,7 +15,8 @@
 
  .event-box {
 
-     max-width: 100%;
+     width:100%;
+     max-width:650px;
      margin: auto;
      padding: 1em;
      overflow: hidden;
@@ -35,7 +36,7 @@
 
 
      img {
-         max-width: 140px;
+         max-width: 130px;
          width: auto;
          overflow: hidden;
          float: left;
@@ -95,7 +96,7 @@
 
      }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 780px) {
 
         padding:1.5em;
         
