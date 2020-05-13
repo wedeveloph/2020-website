@@ -447,6 +447,27 @@ details:hover summary::after {
 }
 
 
+
+/* CONTAINER */
+
+
+
+#container::after{
+    z-index: 9999;
+    pointer-events: none;
+	animation: grain 8s steps(10) infinite;
+	background-image: url(../images/noise.png);
+    background-repeat: repeat;
+    content: ' ';  
+	height: 200%;
+	left: -50%;
+	opacity: .4;
+	position: fixed;
+	top: -100%;
+	width: 200%;  
+}
+
+
 /* AREA: PROJECTS */
 
 
@@ -791,8 +812,20 @@ body.area-projects {
 
 
 
+/* ANIMATIONS */
 
-
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0); }
+  10% { transform:translate(-5%, -10%); }
+  20% { transform:translate(-9%, 5%); }
+  30% { transform:translate(7%, -25%); }
+  40% { transform:translate(-5%, 15%); }
+  50% { transform:translate(-9%, 10%); }
+  60% { transform:translate(9%, 0%); }
+  70% { transform:translate(0%, 15%); }
+  80% { transform:translate(3%, 15%); }
+  90% { transform:translate(-8%, 10%); }
+}
 
 /* FONTS */
 
