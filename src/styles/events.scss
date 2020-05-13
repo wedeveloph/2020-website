@@ -7,10 +7,7 @@
         font-weight:400;
     }
     
-}
-
-
-
+    
 .event-container {
      display: flex;
      flex-wrap: wrap;
@@ -127,10 +124,14 @@
      text-decoration: underline;
  }
 
+    
+}
+
 
  #community-intro {
 
-     min-height: 400px;
+     margin-top:1em;
+     min-height: 300px;
      background-repeat: no-repeat;
      background-size: cover;
      text-align: center;
@@ -144,7 +145,7 @@
      font-family: "Messina Sans Mono";
      text-transform: uppercase;
      opacity: 0.6;
-     color: cyan;
+     color: lightgray;
  }
 
  #community-intro h1 {
@@ -152,22 +153,24 @@
      font-weight: 600;
      text-align: center;
      font-size: 2.6em;
-     padding: 1em;
+     padding: .75em;
      max-width: 700px;
  }
 
  #community-intro a {
      margin: 0 1em;
+     background: #fff;
+     color: #000;
      border: 1px solid #fff;
      border-radius: 20px;
      font-family: "Founders Grotesk";
+     mix-blend-mode: difference;
      padding: .3em 1.4em .4em 1.4em;
-     color: #fff;
  }
 
  #community-intro a:hover {
-     background: #fff;
-     color: blue;
+     background:none;
+     color:#fff;
  }
 
 
