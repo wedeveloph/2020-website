@@ -73,8 +73,8 @@ body,
 h1 {
     display: block;
     text-align: left;
-    font-size: 2.1em;
-    font-family: 'Founders Grotesk';
+    font-size: 2.1em;    
+    font-family: 'Suisse Intl';
     font-weight: 400;
     margin: 0;
     max-width: 80%;
@@ -84,7 +84,7 @@ h2 {
     display: block;
     font-size: 1.8em;
     color: $gray;
-    font-family: 'Founders Grotesk';
+    font-family: 'Suisse Intl';
     max-width: 90%;
 }
 
@@ -922,55 +922,62 @@ body.area-projects {
     }
 }
 
+
+
+
 /* FONTS */
 
 @font-face {
-    font-family: 'Founders Grotesk';
-    src: url('../fonts/FoundersGrotesk-SemiboldItalic.woff2') format('woff2'),
-        url('../fonts/FoundersGrotesk-SemiboldItalic.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Founders Grotesk';
-    src: url('../fonts/FoundersGrotesk-RegularItalic.woff2') format('woff2'),
-        url('../fonts/FoundersGrotesk-RegularItalic.woff') format('woff');
+    font-family: 'Suisse Intl';
+    src: url('../fonts/SuisseIntl-Regular.woff2') format('woff2'),
+        url('../fonts/SuisseIntl-Regular.woff') format('woff');
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Founders Grotesk';
-    src: url('../fonts/FoundersGrotesk-Medium.woff2') format('woff2'),
-        url('../fonts/FoundersGrotesk-Medium.woff') format('woff');
+    font-family: 'Suisse Intl';
+    src: url('../fonts/SuisseIntl-Medium.woff2') format('woff2'),
+        url('../fonts/SuisseIntl-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Founders Grotesk';
-    src: url('../fonts/FoundersGrotesk-MediumItalic.woff2') format('woff2'),
-        url('../fonts/FoundersGrotesk-MediumItalic.woff') format('woff');
+    font-family: 'Suisse Intl';
+    src: url('../fonts/SuisseIntl-Italic.woff2') format('woff2'),
+        url('../fonts/SuisseIntl-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Suisse Intl';
+    src: url('../fonts/SuisseIntl-MediumItalic.woff2') format('woff2'),
+        url('../fonts/SuisseIntl-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Founders Grotesk';
-    src: url('../fonts/FoundersGrotesk-Semibold.woff2') format('woff2'),
-        url('../fonts/FoundersGrotesk-Semibold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
+    font-family: 'Suisse Intl';
+    src: url('../fonts/SuisseIntl-BoldItalic.woff2') format('woff2'),
+        url('../fonts/SuisseIntl-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'Founders Grotesk';
-    src: url('../fonts/FoundersGrotesk-Regular.woff2') format('woff2'),
-        url('../fonts/FoundersGrotesk-Regular.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Suisse Intl';
+    src: url('../fonts/SuisseIntl-Bold.woff2') format('woff2'),
+        url('../fonts/SuisseIntl-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
 }
+
+
+
+
 
 
 

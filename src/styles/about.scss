@@ -17,7 +17,7 @@
         color: $w;
         text-align: center;
         font-size:3.2em;
-        width:100%;
+        max-width:100%;
     }
     
     p{
@@ -52,14 +52,20 @@
     
     .impact-box{
         display: inline-block;
-        width:220px;
+        width:190px;
         text-align: center;
-    font-family: 'Messina Sans';
+        font-family: 'Messina Sans';
         margin:1em 0;
+    }
+    
+    small{
+        color: $w;
+        opacity:0.3;
     }
     
     strong{
         font-size:2em;
+        font-family: 'Suisse Intl';
         color: $blue-accent;
     }
     
