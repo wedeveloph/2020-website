@@ -273,3 +273,28 @@ h2.big{
     }
     
 }
+
+
+
+#announcement-marquee{
+
+    background: #07175f;
+    padding:.5em;
+    text-align: center;
+    
+    .box-inner{
+        padding:.5em;
+    }
+    
+    a{
+        padding:0 2em;
+        width: 600px;
+        max-width:80vw;
+        color:#b6d8cc;
+    }
+    
+    a:hover{
+        color:#fff;
+    }
+    
+}
