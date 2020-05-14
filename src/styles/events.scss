@@ -162,6 +162,7 @@ $lightgray: lightgray;
         margin: .5em 1em 1em 1em;
         overflow: hidden;
         justify-content: center;
+        text-align: center;
         border-bottom: 1px solid $darkgray;
 
         .details {
@@ -197,6 +198,7 @@ $lightgray: lightgray;
         }
 
         .details {
+                        max-width:90%;
 
             .detail {
                 font-size: .8em;
@@ -230,7 +232,7 @@ $lightgray: lightgray;
 
             img {
                 max-width: 100%;
-                margin: 1em 0;
+                margin:auto;
 
             }
 
