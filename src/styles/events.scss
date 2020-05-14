@@ -55,11 +55,13 @@ $lightgray: lightgray;
 
             a.launch {
                 margin: 1em;
-                border: 1px solid $lightgray;
+                border: 1px solid $midgray;
                 border-radius: 20px;
-                font-family: "Founders Grotesk";
-                padding: .3em 1.4em .4em 1.4em;
-                color: $lightgray;
+                font-family: "Messina Sans Mono";
+                font-size:.8em;
+                text-transform: uppercase;
+                padding:.5em 1em;
+                color: $midgray;
             }
 
             a.launch:hover {
@@ -87,7 +89,7 @@ $lightgray: lightgray;
                 }
 
                 h2 {
-                    font-family: "Founders Grotesk";
+                    font-family: "Suisse Intl";
                     text-align: left;
                     width: auto;
                     margin: 0;
@@ -208,7 +210,7 @@ $lightgray: lightgray;
             }
 
             h2 {
-                font-family: "Founders Grotesk";
+                font-family: 'Suisse Intl';
                 width: auto;
                 margin: 0;
                 max-width: 100% !important;
@@ -284,7 +286,7 @@ $lightgray: lightgray;
     color: $lightgray;
     border: 1px solid $lightgray;
     border-radius: 20px;
-    font-family: "Founders Grotesk";
+    font-family: "Suisse Intl";
     mix-blend-mode: difference;
     padding: .3em 1.4em .4em 1.4em;
 }
