@@ -73,10 +73,27 @@
 
 #community{
     
+    background: #254aab;
+    
+    h1{
+        margin:auto;
+        text-align: center;
+        font-weight:500;
+        font-size:2.4em;
+        width:80%;
+        margin-bottom:.5em;
+        color:#a0efef;
+    }
+    
     p{
         max-width:600px;
         margin:auto;
         padding-bottom: 2em;
+        color:#d8ede6;
+    }
+    
+    strong, h2, em{
+        color:#a0efef;
     }
     
     .box-inner{
@@ -113,7 +130,7 @@
     margin:1em .5em;
     padding:.75em;
 
-    p {
+    p{
         font-size: 1em;
         line-height: 1.6em;
     }
@@ -123,6 +140,7 @@
         padding: 0;
         font-weight: 600;
         font-size: 1.2em;
+        color:#a0efef;
         font-family: "Suisse Intl";
     }
 
