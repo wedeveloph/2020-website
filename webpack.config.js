@@ -18,7 +18,8 @@ module.exports = {
       'main': './src/styles/main.scss',
       'landing': './src/styles/landing.scss',
       'about': './src/styles/about.scss',
-      'events': './src/styles/events.scss'
+      'events': './src/styles/events.scss',
+      'community': './src/styles/community.scss'
   },
     
     // ['./src/scripts/main.js', './src/styles/main.scss', './src/styles/portfolio.scss'],
