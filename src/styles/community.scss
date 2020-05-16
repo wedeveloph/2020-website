@@ -80,20 +80,36 @@
     }
     
     .box-inner{
-        max-width: 80%;
+        max-width: 95%;
     }
     
 }
+
+
 
 .community-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
+    
+    .community-photo{
+        width:100%;
+        margin: auto;
+        text-align: center;
+        
+        img{
+            margin: auto;
+            
+        }
+    }
+    
 }
 
 .community-box {
     width: 80%;
-    max-width: 300px;
+    max-width: 230px;
+    
     margin:1em .5em;
     padding:.75em;
 
@@ -110,7 +126,7 @@
         font-family: "Suisse Intl";
     }
 
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 900px) {
         
         padding:0;
     
