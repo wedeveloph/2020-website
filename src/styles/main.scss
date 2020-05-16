@@ -499,67 +499,6 @@ details:hover summary::after {
 }
 
 
-/* AREA: PROJECTS */
-
-
-body.area-projects {
-    //background: $blue-page;
-}
-
-
-.projects-container {
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 800px;
-
-    .project-box {
-        width: 320px;
-        margin: 1em;
-        padding: .5em;
-        //box-shadow: 0 5px 25px $blue-dark;
-
-        img {
-            display: none;
-        }
-
-        h1 {
-            font-size: 1.5em;
-            font-family: 'Messina Sans';
-        }
-
-        h3 {
-            font-family: "Messina Sans Mono";
-            text-transform: uppercase;
-            font-size: .8em;
-            color: $gray-light;
-        }
-
-
-        p {
-            font-size: .9em;
-            color: $gray-light;
-        }
-
-    }
-
-    .project-box:hover {
-        transform: scale(1.02);
-    }
-
-    @media only screen and (max-width: 800px) {
-        .project-box {
-            width: 90%;
-            max-width: 600px;
-        }
-    }
-
-
-}
-
-
-
 /* EMAIL SIGNUP */
 
 #signup {
