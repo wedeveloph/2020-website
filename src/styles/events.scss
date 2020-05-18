@@ -2,10 +2,6 @@
 @import 'colors';
 
 
-$midgray: #a8a8a8;
-$lightgray: lightgray;
-
-
 #intro{
     padding:0 0 2em 0;
 }
@@ -21,7 +17,6 @@ $lightgray: lightgray;
     }
 
     h1 {
-        text-align: center;
         margin: .5em .5em 1.5em .5em;
         font-weight: 400;
         font-size:.8em;
@@ -279,7 +274,7 @@ $lightgray: lightgray;
     font-family: "Messina Sans Mono";
     text-transform: uppercase;
     opacity: 0.6;
-    color: lightgray;
+    color: $gray-lighter;
 }
 
 #community-intro h1 {
