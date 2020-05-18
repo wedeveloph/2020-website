@@ -1,4 +1,7 @@
-$darkgray: #5a5a5a;
+
+@import 'colors';
+
+
 $midgray: #a8a8a8;
 $lightgray: lightgray;
 
@@ -14,7 +17,7 @@ $lightgray: lightgray;
         font-size:2em;
         font-weight: 100;
         padding:0;
-        color: $midgray;
+        color: $gray-light;
     }
 
     h1 {
@@ -22,7 +25,7 @@ $lightgray: lightgray;
         margin: .5em .5em 1.5em .5em;
         font-weight: 400;
         font-size:.8em;
-        color: $darkgray;
+        color: $gray-dark;
     }
 
 
@@ -38,7 +41,7 @@ $lightgray: lightgray;
             padding: 1em;
             overflow: hidden;
             justify-content: center;
-            border-bottom: 1px solid $darkgray;
+            border-bottom: 1px solid $gray-dark;
 
             .details {
                 text-align: center;
@@ -63,18 +66,19 @@ $lightgray: lightgray;
 
             a.launch {
                 margin: 1em;
-                border: 1px solid $midgray;
+                border: 1px solid $gray-light;
                 border-radius: 20px;
                 font-family: "Messina Sans Mono";
                 font-size:.8em;
                 text-transform: uppercase;
                 padding:.5em 1em;
-                color: $midgray;
+                color: $w;
             }
 
             a.launch:hover {
-                background: $lightgray;
-                color: $darkgray;
+                background: $gray-lighter;
+                border: 1px solid $gray-lighter;
+                color: $gray-dark;
                 cursor: ne-resize;
             }
 
@@ -91,7 +95,7 @@ $lightgray: lightgray;
 
                 .detail {
                     font-size: .8em;
-                    color: $midgray;
+                    color: $gray-light;
                     padding: .5em;
                     margin: 0 .5em;
                 }
@@ -103,7 +107,7 @@ $lightgray: lightgray;
                     margin: 0 0 .5em 0;
                     font-size: 1.6em;
                     font-weight: 500;
-                    color: $lightgray;
+                    color: $gray-lighter;
                 }
 
                 h3 {
@@ -145,7 +149,7 @@ $lightgray: lightgray;
     }
 
     .event-box:hover h2 {
-        text-shadow: 0 0 30px $darkgray;
+        text-shadow: 0 0 30px $gray-dark;
     }
 
 
@@ -172,7 +176,7 @@ $lightgray: lightgray;
         overflow: hidden;
         justify-content: center;
         text-align: center;
-        border-bottom: 1px solid $darkgray;
+        border-bottom: 1px solid $gray-dark;
 
         .details {
             text-align: center;
@@ -211,7 +215,7 @@ $lightgray: lightgray;
 
             .detail {
                 font-size: .8em;
-                color: $midgray;
+                color: $gray-light;
                 padding: .5em;
                 margin: 0 .5em;
             }
@@ -226,7 +230,7 @@ $lightgray: lightgray;
                 line-height: 1em;
                 text-align: center;
                 font-weight: 500;
-                color: $lightgray;
+                color: $gray-lighter;
             }
             
             h4{
@@ -290,8 +294,8 @@ $lightgray: lightgray;
 #community-intro a {
     margin: 0 1em;
     background: none;
-    color: $lightgray;
-    border: 1px solid $lightgray;
+    color: $gray-lighter;
+    border: 1px solid $gray-lighter;
     border-radius: 20px;
     font-family: "Suisse Intl";
     mix-blend-mode: difference;
@@ -299,8 +303,8 @@ $lightgray: lightgray;
 }
 
 #community-intro a:hover {
-    background: $lightgray;
-    color: $darkgray;
+    background: $gray-lighter;
+    color: $gray-dark;
 }
 
 

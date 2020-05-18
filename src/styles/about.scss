@@ -5,9 +5,11 @@
     
     padding:4em 3em;
     
+    background-color: $blue-mid;
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
+    background-attachment: fixed;
     
     .box-inner{
         max-width:750px;
@@ -15,6 +17,8 @@
     
     h1{
         font-size:3.2rem;
+        text-align: center;
+        color: $w;
     }
     
     p{
