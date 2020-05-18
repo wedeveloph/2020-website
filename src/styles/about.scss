@@ -13,17 +13,16 @@
         max-width:750px;
     }
     
-    h2{
+    h1{
         color: $w;
         text-align: center;
         font-size:3.2em;
+        font-weight: 800;
         max-width:100%;
     }
     
     p{
         color: #ede5e5;
-        line-height:1.8em;
-        margin-bottom:1.5em;
     }
     
     
@@ -65,6 +64,7 @@
     
     strong{
         font-size:2em;
+        line-height:140%;
         font-family: 'Suisse Intl';
         color: $blue-accent;
     }
