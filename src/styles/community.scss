@@ -1,3 +1,6 @@
+
+@import 'colors';
+
 #community-intro {
 
     min-height: 600px;
@@ -5,36 +8,30 @@
     background-size: cover;
     text-align: center;
 
+    h1 {
+        color: $w;
+        font-weight: 600;
+        padding: 0 1.5em 1.5em 1.5em;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-family: "Messina Sans Mono";
+    }
+    
+    a {
+        border: 1px solid $w;
+        border-radius: 18px;
+        font-family: "Suisse Intl";
+        padding: .7em 1.4em;
+        color: $w;
+    }
+
+    
+
+
 }
 
-#community-intro h3 {
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-    font-family: "Messina Sans Mono";
-    text-transform: uppercase;
-    opacity: 0.6;
-    color: cyan;
-}
-
-#community-intro h1 {
-    color: #fff;
-    font-weight: 600;
-    text-align: center;
-    font-size: 2.4em;
-    padding: 1em;
-    max-width: 700px;
-}
-
-#community-intro a {
-    margin: 0 1em;
-    border: 1px solid #fff;
-    border-radius: 28px;
-    font-size:1.2em;
-    font-family: "Suisse Intl";
-    padding: .7em 1.4em .7em 1.4em;
-    color: #fff;
-}
 
 #community-intro a.hard {
     background: #fff;
@@ -71,66 +68,68 @@
     color: blue;
 }
 
-#community{
-    
+#community {
+
     background: #254aab;
-    
-    h1{
-        margin:auto;
+
+    h1 {
+        margin: auto;
         text-align: center;
-        font-weight:500;
-        font-size:2.4em;
-        width:80%;
-        margin-bottom:.5em;
-        color:#a0efef;
+        font-weight: 500;
+        font-size: 2.4em;
+        width: 80%;
+        margin-bottom: .5em;
+        color: #a0efef;
     }
-    
-    p{
-        max-width:600px;
-        margin:auto;
+
+    p {
+        max-width: 600px;
+        margin: auto;
         padding-bottom: 2em;
-        color:#d8ede6;
+        color: #d8ede6;
     }
-    
-    strong, h2, em{
-        color:#a0efef;
+
+    strong,
+    h2,
+    em {
+        color: #a0efef;
     }
-    
-    .box-inner{
+
+    .box-inner {
         max-width: 95%;
     }
-    
+
 }
 
 
 
-.community-container{
+.community-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-    
-    .community-photo{
-        width:100%;
+
+
+    .community-photo {
+        width: 100%;
         margin: auto;
         text-align: center;
-        
-        img{
+
+        img {
             margin: auto;
-            
+
         }
     }
-    
+
 }
 
 .community-box {
     width: 80%;
     max-width: 230px;
-    
-    margin:1em .5em;
-    padding:.75em;
 
-    p{
+    margin: 1em .5em;
+    padding: .75em;
+
+    p {
         font-size: 1em;
         line-height: 1.6em;
     }
@@ -140,25 +139,23 @@
         padding: 0;
         font-weight: 600;
         font-size: 1.2em;
-        color:#a0efef;
+        color: #a0efef;
         font-family: "Suisse Intl";
     }
 
     @media only screen and (max-width: 900px) {
-        
-        padding:0;
-    
-        width:100%;
+
+        padding: 0;
+
+        width: 100%;
         max-width: 900px;
-        
+
     }
 }
 
 
 
-.community-communities{
-    
-}
+.community-communities {}
 
 
 @media only screen and (max-width: 600px) {
