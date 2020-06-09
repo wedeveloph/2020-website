@@ -1,8 +1,6 @@
 # 2020-website
  Developh in 2020
 
-
-
 ## Running
 * Make sure you have npm.
 * CD to the folder and run npm dev to start a local server.
