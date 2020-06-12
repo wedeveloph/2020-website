@@ -3,3 +3,5 @@ node_modules/*
 *.woff
 *.woff2
 *.DS_Store
+.DS_Store
+assets/fonts.zip
