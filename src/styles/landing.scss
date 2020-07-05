@@ -250,11 +250,19 @@ $landing-bg: #ffffff;
 
 
 
-
 #announcement{
     background: #1d31b4;
     text-align: center;
     padding:4em 0;
+    
+    h1{
+        font-size: 3em;
+        font-family: 'Messina Sans';
+        font-weight: 800;
+        letter-spacing: -1.5px;
+        color: lightblue;
+        
+    }
     
     img{
         mix-blend-mode: lighten;
