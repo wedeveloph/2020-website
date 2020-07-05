@@ -87,7 +87,8 @@ h2 {
 }
 
 h3 {
-    margin: 2em 0;
+    margin: 1em 0;
+    color: $w;
     font-weight: 100;
 }
 
@@ -193,6 +194,18 @@ details:hover summary::after {
     color: $gray-light;
 }
 
+ul, ol{
+    max-width: 700px;
+}
+
+ul li, ol li{
+    color: $w;
+    padding:.25em 1em;
+    margin:0;
+    font-size:1.125em;
+    line-height: 1.4em;
+}
+
 .row {
     display: flex;
 
@@ -209,6 +222,52 @@ details:hover summary::after {
         }
     }
 
+}
+
+
+
+.impact{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .impact-box{
+        display: inline-block;
+        width:190px;
+        text-align: center;
+        font-family: 'Messina Sans';
+        margin:1em 0;
+    }
+    
+    small{
+        color: $w;
+        opacity:0.3;
+    }
+    
+    strong{
+        font-size:2em;
+        line-height:140%;
+        font-family: 'Suisse Intl';
+        color: $blue-accent;
+    }
+    
+        em{
+    font-family: 'Messina Sans Mono';
+            display: block;
+            text-transform: uppercase;
+            font-style: normal;
+            color: $w;
+        }
+        
+    
+    @media only screen and (max-width: 800px) {
+        .impact-box{
+            width:190px;
+        }   
+        
+        justify-content: center;
+    }
 }
 
 
@@ -637,8 +696,15 @@ details:hover summary::after {
 
 /* AREA: COMMUNITY */
 
+.community-photo{
+    margin: 0 auto;
+    text-align: center;
+    padding: .5em;
+}
+
 
 .community-container {
+   
 
     .community-communities {
         width: 100%;
@@ -663,6 +729,10 @@ details:hover summary::after {
     }
 
 
+    
+    p u{
+        color: lightblue;
+    }
 
     a.button {
         display: inline-block;

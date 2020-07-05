@@ -43,50 +43,6 @@
 }
 
 
-.impact{
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    .impact-box{
-        display: inline-block;
-        width:190px;
-        text-align: center;
-        font-family: 'Messina Sans';
-        margin:1em 0;
-    }
-    
-    small{
-        color: $w;
-        opacity:0.3;
-    }
-    
-    strong{
-        font-size:2em;
-        line-height:140%;
-        font-family: 'Suisse Intl';
-        color: $blue-accent;
-    }
-    
-        em{
-    font-family: 'Messina Sans Mono';
-            display: block;
-            text-transform: uppercase;
-            font-style: normal;
-            color: $w;
-        }
-        
-    
-    @media only screen and (max-width: 800px) {
-        .impact-box{
-            width:190px;
-        }   
-        
-        justify-content: center;
-    }
-}
-
 
 .vm{
     
