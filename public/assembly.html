@@ -43,7 +43,10 @@
       
       <style type="text/css">
           
-          
+          h1{
+              color: #DE9FB2;
+              text-align: center;
+          }
       
           a{
               color:#eaeaea;
@@ -56,10 +59,11 @@
           
           p{
               text-align: left !important;
+              color:#ede6e6;
           }
           
           p.intro{
-              max-width:650px;
+              max-width:750px;
               margin: 0 auto;
 
           }
@@ -77,66 +81,92 @@
               color:#d6dede;
               text-shadow: 0 0 20px #777777;
           }
-      
-          .donate{
-              margin:1em auto;
-              padding:0 .5em;
-              max-width:550px;
-              border:1px solid #585858;
-              padding:1em 1em 2em 1em;
+          
+          
+          #assembly-intro{
+              min-height: 260px;
           }
           
-          .donate details{
-              padding: 1em 0 1em 0;
+          /* SCHEDULE */
+          
+          .assembly-schedule{
+              margin:2em 0;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
           }
           
-          .donate h3{
-              margin:0;
-              padding:0;
-              font-size:1.4em;
-              color:#d8d8d8;
+          .assembly-schedule h2{
+              color: #EABF25;
+              font-weight: 100;
+              text-transform: uppercase;
+              text-align: left;
+              font-family:"Messina Sans Mono";
+              font-size: 1.2em;
+              width: 100%;
+          }
+          
+          .assembly-schedule .sched__{
+              display: inline-block;
+              width: 350px;
+              margin: 1em 0; 
+              padding:.75em;
+              box-sizing: border-box;
+          }
+          
+          .assembly-schedule .sched__.special{
+              background: #0046BD;
+          }
+          
+          .assembly-schedule .sched__.special h4{
+            color:#eaeaea;
+          }
+          
+          .assembly-schedule .sched__ h4{
+            font-family: "Suisse Intl";
+            color: #DE9FB2;
+              text-transform: capitalize;
+              font-size: 1.5em;
+          }
+          
+          .assembly-schedule .sched__ p{
+              font-size: 1em;
+              line-height: 1.5em;
+          }
+          
+          .assembly-schedule .sched__ .type{
+            text-transform: uppercase;
+              padding:.25em .5em;
+              margin:.25em;
+              background: #DE9FB2;
+              border-radius: 20px;
+              display: inline-block;
+            font-family:"Messina Sans Mono";
+              color:#1C1719;
+              font-weight: 100;
+          }
+          
+          .assembly-schedule .sched__ .sched__time{
+              
+              margin:.25em;
+              padding:.25em .5em;
+              background: #DE9FB2;
+              color:#1C1719;
+              border-radius: 20px;
+              display: inline-block;
               
           }
           
-          .donate p{
-              max-width:100%;
-              font-size:.8em;
-              margin-bottom:0;
-              text-align: left !important;
-          }
+            
           
           
-          .donate a.btn{
-              padding:.5em;
-              border:1px solid #585858;
-              color:#ccc;
-          }
-          
-          .donate a.btn:hover{
-              color:#d8d8d8;
-              box-shadow: 0 0 15px rgba(119, 119, 119, 0.13);
-          }
-          
-          .donate a h3:hover{
-              color:#fff;
-          }
-          
-
-          .donated{
-              text-align: center;
-              font-size:2em;
-              padding:.25em;
-              color: #eaeaea;
-          }
-          
-
           
       </style>
       
       
 
   </head>
-  <body class="area-projects" style="background:#0e0e0f;">
+  <body style="background:#1C1719;">
       
       
       
@@ -180,225 +210,148 @@
       
       <div id="container">
       
-          <div id="community-intro" class="box center" style="background-image:url(images/events/cover.jpg);">
-              
-              <div class="box-inner">
-        <br>
-            <h3>Open to the entire community</h3>
-            <h1>We call on people to rise with us: we will match donations & amplify lives</h1>
-                <a href="https://facebook.com/develophorg" target="_blank">Join the Facebook group</a>
-                <a href="https://develo.ph/mailing">Join the mailing list</a>
-              
-            </div>
-              
+          <div id="assembly-intro" class="box center" style="background-image:url(images/assembly/cover.jpg);">
           </div>
           
           
           
-          <div id="events">
+          <div id="assembly">
                   
           <div id="intro" class="box center">
               <div class="box-inner">
                   
+                  <h1>Developh Assembly</h1>
                   
-                  <p class="intro">When we were first getting into technology in the Philippines, we were entranced by big tech and ideals that have grown increasingly complicit with the injustices happening around the world. As we reflect and move towards tech for good, we call on you to join us in whatever way you are able to to rise up&mdash;if you are able to contribute financially, please do so, or use your skills to help us amplify more stories and messages that need to be told. <br><br>We will be posting updates of our donations and stories on our <a href="https://fb.com/develophorg">Facebook page</a> and <a href="https://twitter.com/develophorg" target="_blank">Twitter</a>.</p>
-                  
-                  <p style="text-align: center !important" class="lastupdated">Last updated: </p>
-                  <script type="text/javascript">
-                      $(".lastupdated").append(document.lastModified);
-                  </script>
+                  <p class="intro">
+                    We're calling on everyone: from our community members new and old, anyone eager to learn more about Developh, our partners and friends to join us in a week-long series of talks and workshops brought by our core, to you. Join us for our Main Assembly and for our other tiny events–we're thrilled to welcome you into the community!<br><br>
+                      
+                    Explore our work on technology for social good, learn how innovation can be made more impactful, and be a part of crafting technology and experiences for social good with us.</p>
                   
                   <br>
                   
-                  <h4 class="month">Donations</h4>
+                  <img src="images/assembly/divider.jpg">
                   
-                  <div class="donated">PHP26,300 RAISED</div>
-                  
-                  <p class="emphasis">We will <strong>match up to $500 or PHP 25,000 of donations</strong> to the following funds. If you donate PHP500, we will also donate PHP500.</p>
                   <br><br>
+                 
+                  <h1 style="color:#EABF25;">Registration</h1>
                   
-                  <h4>How to match?</h4>
-                  <p >Email us at <a href="mailto:hello@developh.org">hello@developh.org</a> or send us a message on <a href="http://m.me/develophorg">Messenger</a> with a screenshot of your donation for us to match it.</p>
+                  <hr>
                   
-                  <h4>Philippines: Supporting political prisoners, activists</h4>
-                
+        <div class="registration-block">
                   
-                  <p>These events have reinvigorated our mission to support political prisoners and activists who are continuously terrorized by the state and government. On May 30th, Kadamay (urban poor group) Secretary-General Carlito Badion's body was found dead near a highway in Ormic City, Leyte after being redtagged and sent death threats by suspected state elements. <a href="https://www.philstar.com/headlines/2020/05/30/2017590/kadamay-leader-reported-killed-day-after-house-panels-ok-anti-terror-bill" target="_blank">(Philstar)</a></p>
                   
-                  <div class="donate">
-                      <summary>
-                    <a href="https://www.karapatan.org/" target="_blank"><h3>Karapatan Alliance</h3></a>
+        </div>
+                  
+                  <img src="images/assembly/members.jpg">
+                  
+                  <h1 style="color:#3C9F40;">Schedule</h1>
+                  
+                  <p style="text-align: center;">All times listed below are in Philippine Time, GMT+8.</p>
+                  
+                  
+                  <div class="assembly-schedule">
                       
-                    <p>Since 1995, Karapatan has been working for the promotion and defense of human rights and people's rights in the Philippines and internationally.  </p>
-                    <details>
-                      <p>KARAPATAN is an alliance of individuals, groups and organizations working for the promotion and protection of human rights in the Philippines. Its founders and members have been at the forefront of the human rights struggle in the Philippines since the time of Marcos’ martial law regime.</p>
-                    </details>
-                      </summary>
-                      <a class="btn" href="https://www.karapatan.org/support-karapatan-human-rights-work" target="_blank">Donate (Paypal, PHP or USD)</a>
-                      <br><br>
-                      <em>*Please scroll below the infographic to locate the Paypal donate buttons. They are a bit small.</em>
-                  
-                  </div>
-                  
-                   <div class="donate">
-                      <summary>
-                    <a href="https://www.karapatan.org/" target="_blank"><h3>#SaveLumadSchools</h3></a>
-                      
-                    <p>Displaced Lumad communities are left in a vulnerable state during this pandemic. Let us keep them in mind by extending our help to our Lumad brothers and sisters. </p>
-                    <details>
-                      <p>
-For Davao (priority): There are about 500 indigenous peoples taking refuge in a church compound. With Php 8.00 budget per meal x 3 meals, we are needing about Php 12,000.00 per day or about Php 372,000.00 per month for food. Hygiene kits for 1 month will cost about Php 39,500.00 (Php 79 per person). This excludes hospitalization, medicines and other health needs.
+        <h2>August 7, Friday</h2>
 
-For Cebu: There are 50 indigenous students, teachers and leaders currently taking refuge in two (2) sanctuaries. With Php 25.00 budget per meal, we are needing about Php 3,750.00 per day or about Php 116,250.00 per month. Hygiene kits for 1 month will cost about Php 8,000.00.
+        <div class="sched__">
+            <h4>Crafting Your Resumé</h4>  
+            <div class="type">Workshop</div>
+            <div class="sched__time">2&mdash;3:00PM</div>
+            <p>Learn how our Core team thinks about resumes in our personal careers and endeavors, and refine yours with us!</p>
+        </div>
+                      
+        <div class="sched__">
+            <h4>Designing with Developh</h4>    
+            <div class="type">Workshop</div>
+            <div class="sched__time">1&mdash;2:00PM</div>
+            <p>Learn how our Core team thinks about resumes in our personal careers and endeavors, and refine yours with us!</p>
+        </div>
+                      
+        <h2>August 8, Saturday</h2>
 
-For Manila: There are 85 indigenous students, teachers and leaders currently taking refuge at the University of the Philippines Diliman, Quezon City. With Php 20.00 per meal, we are needing about Php 5,100.00 or about Php 158,100.00 for a month. Hygiene kits for 1 month will cost Php 19,860.00. The initial call for donations in mid-March have provided us with rice good for 3 months and a month supplies of viand (canned goods, noodles and vegetables). </p>
-                        <p>For questions:<br>
-Teacher Elsa (Bakwit School - Metro Manila): +63 909 012 8952<br>
-Teacher Jurain (Bakwit School - Cebu City): +63 945 354 9620<br>
-Teacher Mimi  (Bakwit School - Davao City): +63 930 630 0732</p>
-                    </details>
-                      </summary><br>
-                      <a class="btn" href="https://paypal.me/riuslumadbakwit" target="_blank">Donate (Paypal, USD or PHP)</a>
-                                    <br>    <br>     
-                    <blockquote>
-                   
-GCASH<br>
-Jeany Rose Hayahay<br>
-09261636005<br><br>
-BDO - Loyola Heights<br>
-Geming Andrea Alonzo<br>
-003570219822
-                    </blockquote>
-                  </div>
-                  
-                  
-                  <div class="donate">
-                    <a href="http://facebook.com/parakaymanong" target="_blank"><h3>#ParaKayManong</h3></a>
-                      
-                    <p>Established in April 19, 2020, Para! Kay Manong is an ongoing campaign to help jeepney and tricycle drivers amidst the ongoing threat of the recent COVID-19 pandemic. Now with its 3rd Batch, we aim to raise more funds to widen our list of beneficiaries.</p>
-                        <br>
-                      <a class="btn" href="https://paypal.me/sempermanalo" target="_blank">Donate (Paypal)</a><br>
-                      <blockquote>BDO: 007620215856<br>
-                      BPI: 3029379423<br>
-                    GCash: 0917 810 6065 (Kamille Estanislao), 0917 765 5678 (Semper Manalo)<br>
-                        PayMaya: 0917 810 6065 (Kamilla Estanislao)
-                      </blockquote>
-                  
-                  </div>
-                  
-                  
-                     <div class="donate">
-                      <summary>
-                    <a href="https://www.facebook.com/hustisyaphils/" target="_blank"><h3>Hustisya (Pagkakaisa ng mga Biktima para sa Hustisya)</h3></a>
-                      
-                    <p>Hustisya! (United for Justice) is a national organization of victims of different forms of political repression. It is also an association of relatives, friends of victims of political killings or extrajudicial killings.  </p>
-                    <details>
-                      <p>
-It was established at the height of Gloria Macapagal-Arroyo regime's political repression. However, the systematic violent, repressive and deceitful state continue to condone various forms of human rights abuses. The culture of impunity remains unabated. For this, Hustisya remains as an organization of victims, and relatives of the victims of human rights violations under any repressive government.
+        <div class="sched__">
+            <h4>Turning Advocacy Into Impact</h4>  
+            <div class="type">Workshop</div>
+            <div class="sched__time">4&mdash;5:00PM</div>
+            <p>As an organization focused on tangible impact and change over pure awareness, it’s easy to get caught up in intentions to do good not aligning at all with execution.<br>Watch us examine the development of our passion projects and initiatives––getting things done instead of just spreading awareness.
 </p>
-                    </details>
-                      </summary>
+        </div>
                       
-                    <blockquote>
-                    Bank of the Philippine Islands<br>
-Pagkakaisa ng mga Biktima para sa Hustisya Inc.<br>
-Philippine Peso Account No. 4253 4393 14<br>
-US Dollar Account No. 4254 0241 93
-                    </blockquote>
-                  
-                  </div>
-                  
-                  
-                  <hr>
-                  
-                  <h4>UNITED STATES</h4>
-                  <p>"Our brown skin, or claim under the term "POC", does not negate our ability to benefit from, and perpetuate white supremacy" (Sari Sari Studio). Our founder has been in college in the US for two years and has seen this firsthand. </p>
-            
-                  
-                  
-                  <div class="donate">
-                      <summary>
-                    <a href="https://www.northstarhealthcollective.org/" target="_blank"><h3>North Star Health Collective</h3></a>
-                      
-                          
-                      <p>North Star includes street medics, radical health organizers, and community health trainers.</p>
-                    <details>
-                      <p>The North Star Health Collective was created in response to the Republican National Convention (RNC) in St. Paul September 1-4, 2008. We coordinated and provided health care services, resources, and training to ensure the safety of our community over the weeks before, during, and after the RNC. Thousands of community members and families attended protests against the RNC.</p>
-                    </details>
-                      </summary>
-                      <a class="btn" href="https://www.northstarhealthcollective.org/donate" target="_blank">Donate (All)</a>
-                  
-                  </div>
-                  
-                  
-                  <div class="donate">
-                      <summary>
-                    <a href="https://brooklynbailfund.org/" target="_blank"><h3>Brooklyn Bail Fund</h3></a>
-                      
-                          
-                      <p>The Brooklyn Community Bail Fund is committed to preserving the presumption of innocence for all, ending pretrial detention, securing the freedom of our immigrant neighbors detained by ICE, and supporting their urgent needs post-release.</p>
-                    <details>
-                      <p>Brooklyn Community Bail Fund secures the freedom of New Yorkers who would otherwise be detained pretrial due to their poverty alone. We are committed to challenging the criminalization of race, poverty and immigration status, the practice of putting a price on fundamental rights, and the persistent myth that bail is a necessary element of the justice system.</p>
-                    </details>
-                      </summary>
-                      <a class="btn" href="https://brooklynbailfund.org/donation-form" target="_blank">Donate (All)</a>
-                  
-                  </div>
-                  
-                  
-                  
-                  <div class="donate">
-                      <summary>
-                    <a href="https://www.reclaimtheblock.org/home" target="_blank"><h3>Reclaim the Block</h3></a>
-                      <p>A coalition to demand that Minneapolis divest from policing and invest in long-term alternatives.</p>
-                    <details>
-                      <p>Reclaim the Block began in 2018 and organizes Minneapolis community and city council members to move money from the police department into other areas of the city’s budget that truly promote community health and safety. We believe health, safety and resiliency exist without police of any kind. We organize around policies that strengthen community-led safety initiatives and reduce reliance on police departments. We do not believe that increased regulation of or public engagement with the police will lead to safer communities, as community testimony and documented police conduct suggest otherwise.</p>
-                    </details>
-                      </summary>
-                      <a class="btn" href="https://secure.everyaction.com/zae4prEeKESHBy0MKXTIcQ2">Donate (United States)</a>
-                  
-                      <a class="btn"  href="https://www.mpd150.com/donate/">Donate (Outside the United States)</a>
-                  </div>
-                  
-                  
-                  <div class="donate">
-                      <summary>
-                    <a href="https://www.blackvisionsmn.org/" target="_blank"><h3>Black Visions</h3></a>
-                      
-                      <p>Black Visions Collective (BLVC) believes in a future where all Black people have autonomy, safety is community-led, and we are in right relationship within our ecosystems.</p>
-                    <details>
-                      <p>Since 2017, Black Visions Collective, has been putting into practice the lessons learned from organizations before us in order to shape a political home for Black people across Minnesota. We aim to center our work in healing and transformative justice principles, intentionally develop our organizations core “DNA” to ensure sustainability, and develop Minnesota’s emerging Black leadership to lead powerful campaigns. By building movements from the ground up with an integrated model, we are creating the conditions for long term success and transformation.</p>
-                    </details>
-                      </summary>
-                      <a class="btn" href="https://secure.everyaction.com/4omQDAR0oUiUagTu0EG-Ig2">Donate (United States only)</a>
-                  
-                  </div>
-                  
-                  
+        <div class="sched__ special">
+            <h4>Main Assembly</h4>    
+            <div class="type">Assembly</div>
+            <div class="sched__time">8PM&mdash;</div>
+            <p>The main assembly welcomes members new and old into the background, growth, and programs being run by Developh. The Developh Core team will share the roadmap of our initiatives and projects, the state of the organization, and open programs and projects to signups.</p>
+        </div>
+                         
+        <h2>August 9, Sunday</h2>
 
+        <div class="sched__">
+            <h4>Microzines</h4>  
+            <div class="type">Workshop</div>
+            <div class="sched__time">4&mdash;5:30PM</div>
+            <p>A microzine is a story at its smallest, creation at its most condensed. Set aside the NaNoWriMo, forget the planning document, and leave the conversations on mute.<br>Join Pauline Wee for an hour of going back to the basics: paper, pen, a pair of scissors, and something to say.</p>
+        </div>
+                      
+        <div class="sched__">
+            <h4>Resumé Workshop</h4>    
+            <div class="type">Workshop</div>
+            <div class="sched__time">8:30&mdash;9:30PM</div>
+            <p>Learn how our Core team thinks about resumes in our personal careers and endeavors, and refine yours with us!</p>
+        </div>
+                 
+                         
+        <h2>August 10, Monday</h2>
+
+        <div class="sched__">
+            <h4>Notion with Developh</h4>  
+            <div class="type">Workshop</div>
+            <div class="sched__time">4&mdash;5:30PM</div>
+            <p>Meet the Notion (notion.so, an all-in-one free workspace tool) power users on the team and explore how we use Notion to get our lives together: tasking, notetaking, layouting, and even making our own mini websites!</p>
+        </div>
+                      
+        <div class="sched__">
+            <h4>Coffee Chat</h4>    
+            <div class="type">Hangout</div>
+            <div class="sched__time">8:30&mdash;9:30PM</div>
+            <p>Hang with us in the Developh Discord and say hello (or listen in) as we talk about life, creation, and everything in between!</p>
+        </div>
+                                      
+        <h2>August 11, Tuesday</h2>
+
+        <div class="sched__">
+            <h4>Project Management at Developh</h4>  
+            <div class="type">Workshop</div>
+            <div class="sched__time">7&mdash;8:30PM</div>
+            <p>How does our tiny team launch big things? How have we adjusted to being a distributed organization, and how do we work as a student team with so many different responsibilities?<br>Learn about our approach, tools we recommend, and project management learnings over the years; student leaders and org members&mdash;you'll love this!</p>
+        </div>
+                      
+        <div class="sched__">
+            <h4>Coffee Chat</h4>    
+            <div class="type">Hangout</div>
+            <div class="sched__time">8:30&mdash;9:30PM</div>
+            <p>Hang with us in the Developh Discord and say hello (or listen in) as we talk about life, creation, and everything in between!</p>
+        </div>
+                                            
+        <h2>August 12, Friday</h2>
+
+        <div class="sched__">
+            <h4>Building Your Personal Brand</h4>  
+            <div class="type">Workshop</div>
+            <div class="sched__time">2&mdash;3:00PM</div>
+            <p>How does one start building a presence for themselves? Realtalk: How do you build a presence without selling your soul to being a generic LinkedIn thought leader&mdash;having a professional identity that still is you?<br>You don’t need to follow everyone else for your work to matter. Here’s a workshop and circle with how we build a brand, network, and advance professionally while staying true to oneself.
+</p>
+        </div>
+                      
+        <div class="sched__">
+            <h4>Core Panel</h4>    
+            <div class="type">Panel</div>
+            <div class="sched__time">8:00&mdash;9:30PM</div>
+            <p>Join us for a panel and Q&A featuring the Developh team as we discuss our careers, social impact work, and thoughts about the technology and creation ecosystem we're creating for.</p>
+        </div>
+                      
+                  </div>
                   
-                  
-                  <hr>
-                  
-                  <h4 class="month">Commissions for a Cause</h4>
-                  <p>If you're a student who is doing commissions (any type: art, writing, design, etc.) to raise funds for #BLM or human rights organizations, we built <a href="https://cause.ph">Cause.ph</a>, a new directory.</p>
-                  
-                  <hr>
-                  
-                  <h4 class="month">Storytelling</h4>
-                  <p>Developh is exploring ways to tell the stories and amplify the lives and work of political activists and prisoners in the Philippines. We are a nation that has stigmatized their organizing work, despite it being the backbone of our countless rights and liberties. If you are a student and would like to join us in writing, curating, and designing ways to effectively and impactfully communicate this, please reach out to us. hello@developh.org</p>
-                  
-                  
-                  
-                  <hr>
-                  
-                  <h4 class="month">Information</h4>
-                  <p>Developh is a Philippine-based, student-run organization working towards bridging the innovation gap. In the past year, we were thankfully able to get a good amount of financial support for our programming and are able to redirect some funds from our organization and our leaders' personal earnings to these pressing, urgent, global causes that comprise our initial $500.<br> If you are a tech organization that would like to coordinate and explore how we can best work towards collective action, we would love to talk with you. hello@developh.org</p>
-                  
-                  <p>If you know of any organizations that we can support or collaborate with, please reach out to us.</p>
-                  
-                  
-              </div>
                   
               </div>
             </div>
