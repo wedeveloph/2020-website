@@ -43,9 +43,14 @@
       
       <style type="text/css">
           
+          .box-inner{
+              max-width: 900px;
+          }
+          
           h1{
               color: #DE9FB2;
               text-align: center;
+              margin:.5em auto;
           }
       
           a{
@@ -83,19 +88,101 @@
           }
           
           
+          /* HEADER */
+          
+          
           #assembly-intro{
               min-height: 260px;
+              background-repeat: no-repeat;
+              background-position: center 20px;
           }
           
+          
           /* REGISTRATION */
+          
           
           .assembly-registration{
               background-image: url(images/assembly/registration-bg.jpg);
               display: block;
-              min-height: 400px;
+              
+              margin:2em 0;
+              max-width: 800px;
+              margin: 0 auto;
+              min-height: 300px;
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
+              
+              display: flex;
+              place-items:center;
+          }
+          
+          .assembly-registration .__reg-wrapper{
+              max-width: 90%;
+              margin: 0 auto;
+              height: auto;
+              display: inline-block;
+              text-align: center;
+          }
+          
+          .assembly-registration .__reg-wrapper p{
+          text-align: center;
+          }
+          
+          .assembly-registration .__reg-wrapper a.__reg-button{
+              display: inline-block;
+              margin: 0 auto;
+              padding:.65em 1em;
+              background:#0046BD;
+              color:#ede6e6;
+              
+              border-radius: 100px;
+              font-weight: bold;
+              font-size:1.25em;
+          }
+          
+          
+          .assembly-registration .__reg-wrapper a.__reg-button:hover{
+              background: #DE9FB2;
+              color: #1C1618;
+          }
+          
+          .assembly-registration .__reg-wrapper .__reg-notice{
+              display: block;
+              padding:.75em;
+              
+          }
+          
+          /* WHY */
+          
+          
+          .assembly-why{
+              margin:2em 0;
+              
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-around;
+          }
+          
+          .assembly-why .__why-block{
+            display: inline-block;
+              width:220px;
+              margin:1em;
+          }
+          
+          
+          .assembly-why .__why-block h3{
+              text-align: center;
+              color: #ede6e6;
+              font-weight: 700;
+              margin: 0;
+          }
+          
+          .assembly-why .__why-block p{
+              font-size: .9em;
+              line-height: 1.5em;
+              text-align: center;
+              color: #b9b2b2;
           }
           
           
@@ -169,7 +256,7 @@
               
           }
           
-            
+        
           
           
           
@@ -237,28 +324,53 @@
                   <p class="intro">
                     We're calling on everyone: from our community members new and old, anyone eager to learn more about Developh, our partners and friends to join us in a week-long series of talks and workshops brought by our core, to you. Join us for our Main Assembly and for our other tiny events–we're thrilled to welcome you into the community!<br><br>
                       
-                    Explore our work on technology for social good, learn how innovation can be made more impactful, and be a part of crafting technology and experiences for social good with us.</p>
+                    Explore our work on technology for social good, learn how innovation can be made more impactful, and be a part of crafting technology and experiences for social good with us.</p><br>
+                  
+                  
+                <center>
+                  <img src="images/assembly/divider.jpg">
+                </center>
                   
                   <br>
-                  
-                  <img src="images/assembly/divider.jpg">
-                  
-                  <br><br>
                  
                   <h1 style="color:#EABF25;">Registration</h1>
                   
-                  <hr>
                   
         <div class="assembly-registration">
+            <div class="__reg-wrapper">
             
             <p>Ready to join the Assembly? Fill in the form below and we'll get back to you with the confirmation email and Assembly Kit within a day.</p>
                   
-            <a class="__reg-button">Register for the Developh Assembly</a>
-            <span class="__reg-notice">5 days left</span>
+            <a class="__reg-button">Register for the Developh Assembly</a><br>
+            <span class="__reg-notice">5 days left to register</span>
             <!--  Fuck this i'll just make it manual -->
             
-                  
+            </div>    
         </div>
+                  
+        <div class="assembly-why">
+        
+            <div class="__why-block">
+                <img src="images/assembly/why-friends.jpg">
+                <h3>Meet the Community</h3>
+                <p>We're creators from different backgrounds (no experience required)! Plus: an attendee directory. &hearts;</p>
+            </div>
+            
+            <div class="__why-block">
+                <img src="images/assembly/why-kit.jpg">
+                <h3>Assembly Kit</h3>
+                <p>For the completionist in you:  collect stamps from events, get our curated resources and laernings.</p>
+            </div>
+                  
+            
+            <div class="__why-block">
+                <img src="images/assembly/why-new.jpg">
+                <h3>Constant Learning</h3>
+                <p>Always iterating & executing. Learn from workshops and how to be a part of our initiatives to grow with us. </p>
+            </div>
+            
+        </div>
+                  <hr>
                   
                   <img src="images/assembly/members.jpg">
                   
