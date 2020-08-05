@@ -1,3 +1,5 @@
+Redirect 301 /kit https://docs.google.com/presentation/d/1y1DDThY24k27x6-4JGClHBbOQJNcf_DjL21coMbCzaE/edit?usp=sharing
+
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
