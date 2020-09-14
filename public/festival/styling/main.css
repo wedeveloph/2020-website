@@ -1,0 +1,148 @@
+
+@import url("https://use.typekit.net/jbp2son.css");
+
+body{
+    font-family: neue-haas-unica, sans-serif;
+    color:#433c3c;
+}
+
+#container {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    height: 100%;
+    width: 100%;
+
+    outline: 1em solid red;
+
+    justify-content: center;
+    justify-items: center;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+.box {
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: center;
+    align-items: center;
+    margin: 0;
+}
+
+.box-inner{
+    max-width: 900px;
+    padding: 0 2em;
+}
+
+
+.cover{
+    background: #fc602d;
+    height:400px;
+    width: 100%;
+    background-image: url(../images/cover.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position:  center;
+    
+}
+    @media only screen and (min-width: 1100px) {
+
+        .cover{
+            height: 600px;
+            background-position: top center;
+            background-size:cover;    
+            background-image: url(../images/cover-long.jpg);
+
+        }
+        
+}
+
+.festival-intro{
+
+    margin-top: -70px;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+ p.info{
+    font-size: 1.25em;
+    line-height: 1.5em;
+    max-width: 700px;
+     margin:1em auto;
+}
+
+h1, h2{
+    width: 100%;
+    font-family: aesthet-nova, serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    font-size:3.2em;
+    line-height: 1em !important;
+}
+
+
+img.center{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* KITS */
+
+.festival-donate{
+    background-image: url(../images/bg-orange.jpg);
+}
+
+.kits{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.kits .kit{
+    margin:1.5em;
+    width:300px;
+    padding: 1em;
+    border:1px solid #1d1d1d;
+    border-radius: 5px;
+    
+}
+
+.kits .kit h2{
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.kits .kit h3{
+    margin: 0;
+    font-weight: 0;
+    font-size: 1em;
+}
+
+.kits .kit ul{
+    text-align: left;
+    font-size: .8em;
+}
+
+.kits .kit img{
+    max-width: 60px;
+    mix-blend-mode: exclusion;
+    
+}
+
+
+
