@@ -65,8 +65,9 @@ body{
 
 .box-inner{
 		margin: 0 auto;
+		width: 90vw;
     max-width: 900px;
-    padding: 0 2em;
+    padding: 0 16px;
 }
 
 hr{
@@ -112,6 +113,10 @@ hr{
 
 
 @media only screen and (max-width: 600px) {
+		
+		h1,h2{
+				font-size: 1.5em !important;
+		}
 		
 		.flavor{
 				display: none;
@@ -281,9 +286,13 @@ img.center{
 
 
 @media only screen and (max-width: 800px) {
+		
+		.kits{
+				width: 100%;
+		}
 
 		.kits .kit{
-				width: 200px;
+				width: 100%;
 				border: 0;
 		}
 		
