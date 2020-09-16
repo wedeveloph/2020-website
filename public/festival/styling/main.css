@@ -172,14 +172,14 @@ hr{
 		transform: translateY(-4px);
 }
 
-.festival-cover .beneficiaries{
+.festival-cover .marquee{
 		margin-top: 20px;
 		padding-bottom: 50px;
 		text-transform: uppercase;
 
 }
 
-.festival-cover .beneficiaries strong{
+.festival-cover .marquee strong{
 		font-weight: 300;
 		letter-spacing: .5px;
 		margin: 8px 16px;
