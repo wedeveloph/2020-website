@@ -1,0 +1,433 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/jbp2son.css");
+/* MAIN */
+#side {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: calc(100% - 180px);
+  width: 30px;
+  margin: 2vw;
+  padding: 2.5vw;
+  box-sizing: border-box;
+  border-right: 1px solid #424242;
+  z-index: -9;
+  display: flex;
+}
+#side .rawr {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: botanika-mono-web, monospace;
+  margin-left: -0.25em;
+}
+
+#navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 3vw;
+  padding: 1em 3em;
+  width: 90vw;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 99;
+}
+#navigation a {
+  text-decoration: none;
+  color: #424242;
+}
+#navigation ._nav {
+  width: 180px;
+  margin: 1em 1.5em;
+  opacity: 0.75;
+}
+#navigation ._nav .loc {
+  font-family: "Termina";
+  text-transform: uppercase;
+  display: block;
+}
+#navigation ._nav .loc .place {
+  float: right;
+}
+#navigation ._nav p {
+  font-family: "Suisse Intl";
+  font-size: 12px;
+}
+#navigation ._nav:active, #navigation a:visited {
+  opacity: 1;
+}
+#navigation ._nav:hover {
+  opacity: 1;
+}
+#navigation ._socials {
+  margin-left: 1em;
+  width: 40px;
+}
+#navigation ._socials a {
+  display: block;
+  padding: 0.1em;
+  opacity: 0.7;
+}
+#navigation ._socials a img {
+  max-height: 16px;
+}
+#navigation ._socials a:hover {
+  opacity: 1;
+}
+
+#footer {
+  width: 100%;
+  height: 140px;
+  background-image: url(../images/footer.jpg);
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1em;
+  margin-bottom: 0;
+}
+#footer .col {
+  max-width: 200px;
+  margin: 0 1em;
+}
+#footer .col.about {
+  max-width: 450px;
+  margin-right: 1.5em;
+}
+#footer .col.about ._em {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+#footer .col a {
+  text-align: left;
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  color: #424242;
+}
+#footer .col a:hover {
+  opacity: 1;
+}
+#footer ._socials a {
+  display: block;
+  padding: 0.25em;
+}
+#footer ._socials a img {
+  max-height: 16px;
+}
+@media only screen and (max-width: 800px) {
+  #footer {
+    height: auto;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+  #footer .col {
+    max-width: 100%;
+    width: 100%;
+  }
+  #footer .col a {
+    text-align: center;
+  }
+  #footer .col.about {
+    text-align: center;
+    max-width: 100%;
+  }
+  #footer ._socials {
+    text-align: center;
+  }
+  #footer ._socials a {
+    display: inline-block;
+    width: 50px;
+  }
+}
+
+/* TYPE */
+h3 {
+  font-family: botanika-mono-web, monospace;
+  text-transform: uppercase;
+}
+
+/* GROUNDS */
+.grounds .max iframe {
+  max-width: 95vw;
+}
+
+.link-container {
+  text-decoration: none;
+}
+.link-container a {
+  text-decoration: none;
+}
+
+.link {
+  border: 1px solid #424242;
+  padding: 0.5em;
+  margin: 1em auto;
+  color: #424242;
+}
+.link ._sub {
+  font-family: botanika-mono-web, monospace;
+  text-transform: uppercase;
+}
+.link h2 {
+  text-align: left;
+  margin-right: 0;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  font-size: 2em;
+}
+
+.link:hover {
+  transform: translateX(-8px);
+}
+
+.box.grounds {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10vh;
+}
+.box.grounds .box-bottom {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box.grounds .box-bottom .col.welcome {
+  width: 50vw;
+  max-width: 500px;
+  margin-right: 2em;
+}
+.box.grounds .box-bottom .col.welcome h1 {
+  text-align: right;
+}
+.box.grounds .box-bottom .col.about {
+  width: 40vw;
+  max-width: 500px;
+}
+
+/* ART MARKET */
+.artmarket p.welcome {
+  margin: 0 auto;
+  margin-bottom: 2.5vh;
+  max-width: 450px;
+  font-size: 2em;
+  line-height: 1.25em !important;
+  text-align: center;
+}
+.artmarket .feature {
+  text-align: center;
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 600px;
+  display: block;
+}
+.artmarket .feature img {
+  width: 100%;
+}
+
+.artmarket {
+  width: 90%;
+  margin-left: 5%;
+  padding: 1em;
+  position: relative;
+  right: 0;
+}
+.artmarket ._stream {
+  margin: 5vh auto;
+  width: 100%;
+  max-width: 900px;
+  overflow-x: scroll;
+}
+.artmarket ._stream .stream-inner {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  width: 2500px;
+}
+.artmarket ._stream .stream-box {
+  display: inline-block;
+  padding: 0.5em;
+  border: 1px solid #424242;
+  width: 300px;
+}
+.artmarket ._stream .stream-box h3 {
+  text-align: center;
+  font-size: 1em;
+  margin: 0.25em;
+}
+.artmarket ._stream .stream-box h2 {
+  margin: 0.25em;
+  font-size: 1.5em;
+}
+.artmarket ._stream .stream-box p {
+  width: 100%;
+  font-size: 0.8em;
+  margin: 0;
+  text-align: center;
+}
+.artmarket ._directory {
+  margin: 5vh auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.artmarket ._directory a {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #424242;
+  padding: 0.5em;
+  color: #424242;
+  opacity: 0.9;
+  max-width: 320px;
+  width: 40%;
+  margin: 0.25em;
+}
+.artmarket ._directory span.tag {
+  font-size: 0.7em;
+  font-variant: small-caps;
+  margin-left: 0.5em;
+}
+.artmarket ._directory a:hover {
+  border: 1px solid darkorange;
+  color: darkorange;
+}
+.artmarket ._work {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+.artmarket ._work .desc {
+  display: flex;
+}
+.artmarket ._work .desc p {
+  width: 60%;
+}
+.artmarket ._work .desc .socials {
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  height: auto;
+}
+.artmarket ._work .desc .socials a {
+  display: block;
+  width: 100%;
+}
+.artmarket ._work .desc .socials a:hover {
+  background: Darkorange;
+}
+.artmarket ._work p {
+  width: 70%;
+  max-width: 600px;
+  margin: 1em;
+  padding: 0.5em;
+}
+.artmarket ._work h2 {
+  margin: 1em auto;
+}
+.artmarket ._work h3 {
+  width: 100%;
+  display: block;
+  background: #424242;
+  color: #fff;
+}
+.artmarket ._work center {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.artmarket ._work center img {
+  margin: 0 0.5em;
+}
+.artmarket ._work img.icon {
+  border-radius: 100%;
+  float: left;
+  max-width: 100px;
+  justify-content: center;
+  text-align: center;
+}
+.artmarket ._work img.half {
+  width: 45%;
+}
+.artmarket ._work img.full {
+  width: 100%;
+}
+.artmarket ._work img {
+  padding: 0.5em;
+  width: 33%;
+  max-width: 95vw;
+  object-fit: scale-down;
+}
+.artmarket ._work a {
+  display: inline-block;
+  height: 30px;
+  max-width: 220px;
+  background: #424242;
+  color: #fff;
+  padding: 0.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 1em;
+  letter-spacing: 1px;
+}
+.artmarket ._creator {
+  max-width: 1000px;
+  margin-bottom: 10vh;
+}
+.artmarket ._creator img.profile {
+  max-width: 30%;
+}
+.artmarket ._socials {
+  padding: 1.5em;
+  float: right;
+  width: 300px;
+}
+.artmarket ._socials a {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #424242;
+  padding: 0.5em;
+  color: #424242;
+  opacity: 0.8;
+}
+.artmarket ._socials a:hover {
+  opacity: 1;
+}
+@media only screen and (max-width: 800px) {
+  .artmarket ._socials {
+    float: none;
+    width: 80%;
+  }
+}
+.artmarket a._more {
+  text-decoration: none;
+  padding: 0.5em;
+  margin: 1em;
+  width: 80%;
+  font-size: 2em;
+  border: 1px solid #424242;
+  color: #424242;
+}
+.artmarket a._more::after {
+  margin-left: 0.5em;
+  content: " 🡒";
+}
+.artmarket a._more:hover > a._more::after {
+  transform: translateX(1em);
+}
+.artmarket a._more:hover {
+  color: darkorange;
+  border: 1px solid darkorange;
+}
+
+/*# sourceMappingURL=festival.css.map */

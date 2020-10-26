@@ -1,0 +1,574 @@
+@import url("https://use.typekit.net/jbp2son.css");
+
+
+/* MAIN */
+
+#side {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: calc(100% - 180px);
+  width: 30px;
+  margin: 2vw;
+  padding: 2.5vw;
+  box-sizing: border-box;
+  border-right: 1px solid #424242;
+  z-index: -9;
+  display: flex;
+
+  .rawr {
+    font-size: 2em;
+    letter-spacing: .1em;
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: botanika-mono-web, monospace;
+    margin-left: -.25em;
+  }
+}
+
+#navigation {
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 3vw;
+  padding: 1em 3em;
+  width: 90vw;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 99;
+
+  a {
+    text-decoration: none;
+    color: #424242;
+  }
+
+  ._nav {
+
+    width: 180px;
+    margin: 1em 1.5em;
+    opacity: 0.75;
+
+    .loc {
+      font-family: "Termina";
+      text-transform: uppercase;
+      display: block;
+
+      .place {
+        float: right;
+      }
+
+    }
+
+    p {
+      font-family: "Suisse Intl";
+      font-size: 12px;
+    }
+  }
+
+  ._nav:active, a:visited{
+    opacity: 1;
+  }
+  
+  ._nav:hover {
+    opacity: 1;
+  }
+
+
+  ._socials {
+    margin-left: 1em;
+    width: 40px;
+
+    a {
+      display: block;
+      padding: .1em;
+      opacity: 0.7;
+
+      img {
+        max-height: 16px;
+
+      }
+    }
+
+    a:hover {
+      opacity: 1;
+    }
+  }
+
+
+}
+
+
+#footer {
+
+  width: 100%;
+  height: 140px;
+  background-image: url(../images/footer.jpg);
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1em;
+  margin-bottom: 0;
+
+  .col {
+    max-width: 200px;
+    margin: 0 1em;
+  }
+
+  .col.about {
+    max-width: 450px;
+    margin-right: 1.5em;
+
+    ._em {
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  .col a {
+    text-align: left;
+    font-family: "neue-haas-unica", sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    color: #424242;
+  }
+
+  .col a:hover {
+    opacity: 1;
+  }
+
+  ._socials {
+    a {
+      display: block;
+      padding: .25em;
+
+      img {
+        max-height: 16px;
+
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 800px) {
+
+    height: auto;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    .col {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .col a {
+      text-align: center;
+    }
+
+    .col.about {
+      text-align: center;
+      max-width: 100%;
+    }
+
+    ._socials {
+
+      text-align: center;
+
+      a {
+        display: inline-block;
+        width: 50px;
+
+      }
+
+    }
+
+
+  }
+
+
+}
+
+
+/* TYPE */
+
+
+h3 {
+  font-family: botanika-mono-web, monospace;
+  text-transform: uppercase;
+}
+
+
+
+
+/* GROUNDS */
+
+.grounds{
+  
+  .max{
+    
+    iframe{
+      max-width: 95vw;
+    }
+    
+  }
+  
+}
+
+.link-container{
+  text-decoration: none;
+  
+  a{
+    text-decoration: none;
+  }
+  
+}
+
+
+.link {
+  border: 1px solid #424242;
+  padding: .5em;
+  margin: 1em auto;
+  color: #424242;
+
+  ._sub {
+    font-family: botanika-mono-web, monospace;
+    text-transform: uppercase;
+  }
+  
+  h2{
+    text-align: left;
+    margin-right: 0;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    font-size: 2em;
+  }
+
+}
+
+.link:hover{
+  transform: translateX(-8px);
+}
+
+
+
+.box.grounds {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10vh;
+
+  .box-bottom {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .col.welcome {
+      width: 50vw;
+      max-width: 500px;
+      margin-right: 2em;
+
+      h1 {
+        text-align: right;
+      }
+
+    }
+
+    .col.about {
+      width: 40vw;
+      max-width: 500px;
+    }
+
+  }
+
+
+}
+
+
+
+
+/* ART MARKET */
+
+.artmarket{
+  
+  p.welcome{
+    margin: 0 auto;
+    margin-bottom: 2.5vh;
+    max-width: 450px;
+    font-size: 2em;
+    line-height: 1.25em !important;
+    text-align: center;
+  }
+  
+  .feature{
+    text-align: center;
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 600px;
+    display: block;
+    
+    img{
+      width: 100%;
+    }
+    
+  }
+}
+
+.artmarket{
+  width: 90%;
+  margin-left: 5%;
+  padding: 1em;
+  position: relative;
+  right: 0;
+  
+  
+  
+  ._stream{
+    margin: 5vh auto;
+    width: 100%;
+    max-width: 900px;
+    overflow-x: scroll;
+
+    .stream-inner{
+    display: flex;
+      flex-wrap: no-wrap;
+      flex-direction: row;
+      width: 2500px;
+    }
+    .stream-box{
+      display: inline-block;
+      padding: .5em;
+      border: 1px solid #424242;
+      width: 300px;
+      
+      h3{
+        text-align: center;
+        font-size:1em;
+        margin: .25em;
+      }
+      
+    h2{
+      margin: .25em;
+      font-size: 1.5em;
+    }
+      
+      p{
+        width: 100%;
+        font-size: .8em;
+        margin: 0;
+        text-align: center;
+      }
+      
+    }
+    
+    
+  }
+  
+  ._directory{
+    
+    margin: 5vh auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    a{
+      display: inline-block;
+      text-decoration: none;
+      border:1px solid #424242;
+      padding:.5em;
+      color:#424242;
+      opacity: 0.9;
+      max-width: 320px;
+      width: 40%;
+      margin: .25em;
+    }
+    
+    span.tag{
+      font-size: .7em;
+      font-variant: small-caps;
+      margin-left: .5em;
+    }
+    
+    a:hover{
+      border:1px solid darkorange;
+      color: darkorange;
+    }
+    
+    
+  }
+  
+  ._work{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    
+    .desc{
+      display: flex;
+      
+      p{
+      width: 60%;  
+      }
+      
+    .socials{
+      float: right;
+      display: flex;
+      flex-wrap: wrap;
+      width: 40%;
+      height: auto;
+      
+      a{
+        display: block;
+        width: 100%;
+      }
+      
+      a:hover{
+        background:Darkorange;
+      }
+      
+    }
+    
+      
+    }
+    
+    p{
+      width:70%;
+      max-width: 600px;
+      margin: 1em;
+      padding: .5em;
+    }
+    
+    
+    h2{
+      margin:1em auto;
+    }
+    
+    h3{
+      width: 100%;
+      display: block;
+      background:#424242;
+      color:#fff;
+    }
+    
+  }
+  
+  ._work center{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+    img{
+      margin:0 .5em;
+    }
+    
+  }
+  
+  ._work img.icon{
+    border-radius: 100%;
+    float: left;
+    max-width: 100px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  ._work img.half{
+    width: 45%;
+  }
+  ._work img.full{
+    width: 100%;
+  }
+  
+  ._work img{
+    padding: .5em;
+    width: 33%;
+    max-width: 95vw;
+    object-fit: scale-down;
+  }
+  
+  ._work a{
+    display: inline-block;
+    height: 30px;
+    max-width: 220px;
+    
+      background:#424242;
+      color:#fff;
+    padding: .5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 1em;
+    letter-spacing: 1px;
+  }
+  
+  ._creator{
+    max-width:1000px;
+    margin-bottom: 10vh;
+    
+    img.profile{
+      max-width: 30%;
+    }
+    
+    
+  }
+  
+  ._socials{
+    padding: 1.5em;
+    float: right;
+    width: 300px;
+    
+    a{
+      display: block;
+      text-decoration: none;
+      border:1px solid #424242;
+      padding: .5em;
+      color: #424242;
+      opacity: 0.8;
+    }
+    
+    a:hover{
+      opacity: 1;
+    }
+    
+
+    @media only screen and (max-width: 800px) {
+      
+      float: none;
+      width: 80%;
+    }
+    
+  }
+  
+  a._more{
+    text-decoration: none;
+    padding: .5em;
+    margin: 1em;
+    width: 80%;
+    font-size: 2em;
+    border: 1px solid #424242;
+    color: #424242;
+  }
+  
+  a._more::after{
+    margin-left: .5em;
+    content: " 🡒";
+  }
+  
+  a._more:hover >  a._more::after{
+    transform: translateX(1em);
+  }
+  
+  a._more:hover{
+    color: darkorange;
+    border: 1px solid  darkorange;
+  }
+  
+}
+
+
+

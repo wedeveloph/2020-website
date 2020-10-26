@@ -81,7 +81,6 @@ hr{
 	position: fixed;
 	pointer-events: none;
 	z-index: 99;
-	background: red;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -95,7 +94,7 @@ hr{
 .cover{
     background: #fc602d;
     height: 600px;
-		min-height: 85vh;
+		min-height: 100vh;
     width: 100%;
     background-image: url(../images/cover.jpg);
     background-repeat: repeat-x;
@@ -112,7 +111,7 @@ hr{
 }
 
 .festival-cover .box-inner{
-		margin-top: -30px;
+		margin-top: -150px;
 		padding-bottom: 20px;
 		text-align: center;
 }
@@ -159,7 +158,7 @@ hr{
 		height: 400px;
 		background-position: top center;
 		background-size: cover;
-		background-image: url(../images/cover-long.jpg);
+		background-image: url(../images/cover.jpg);
 
 	}
 }
